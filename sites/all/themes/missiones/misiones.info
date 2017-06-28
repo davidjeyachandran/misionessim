@@ -1,0 +1,18 @@
+name = Misiones Sim
+description = A simple one-column, tableless, theme for Misiones Sim
+package = Core
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/style.css
+
+scripts[] = js/jquery.cycle.lite.js
+scripts[] = js/embed.js
+
+regions[navigation] = Navigation
+
+regions[left-magazine] = Left-Magazine
+regions[right-magazine] = Right-Magazine
+
+regions[content] = Content
+regions[footer] = Footer

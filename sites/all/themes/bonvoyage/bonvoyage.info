@@ -1,0 +1,28 @@
+name = Custom Bon Voyage
+description = Theme for MisionesSIM
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style.css
+
+scripts[] = js/scripts.js
+scripts[] = js/scripts.js
+scripts[] = js/scripts.js
+scripts[] = js/scripts.js
+scripts[] = js/scripts.js
+
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer] = Footer
