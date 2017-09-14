@@ -517,42 +517,44 @@ Custom blocks
   @media (max-width: 767px) {
     /*#block-views-block-view-1-block-1 {
       margin-top: 30px; }*/ }
-  #block-views-block-view-1-block-1 .views-view-grid>.row {
+   .views-view-grid>.row {
     margin-bottom:0px; }
    /*.edicion #block-views-block-view-1-block-1 .views-view-grid>.row {
     margin-bottom:50px; }*/
     @media (max-width: 767px) {
-      #block-views-block-view-1-block-1 .views-view-grid>.row {
+    .views-view-grid>.row {
         margin: 0 -5px; } }
-    #block-views-block-view-1-block-1 .views-view-grid>.row>.col {
+    .views-view-grid.col {
       margin-bottom: 10px;
-      visibility: hidden; }
+      /*visibility: hidden;*/ }
       @media (max-width: 767px) {
-        #block-views-block-view-1-block-1 .views-view-grid>.row>.col {
+    .views-view-grid .col {
           float: none;
           padding: 0;
           width: 100%; } }
     
-  #block-views-block-view-1-block-1 .views-view-grid>.row>.col .views-field-title {
+    .views-view-grid .views-field-field-image {
         display: block;
         background: #000;
         position: relative;
-        /*overflow: hidden;*/
+        overflow: hidden;
   }
   
-  #block-views-block-view-1-block-1 .views-view-grid>.row>.col .views-field-title a:hover{
+    .views-view-grid .views-field-title a:hover{
     text-decoration: none;    
   }
   
-  #block-views-block-view-1-block-1 .views-view-grid>.row>.col .views-field-field-image {
+    .views-view-grid .views-field-field-image a img{
     
     display: block;
     background: #000;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height:100%;
   }
       
-  #block-views-block-view-1-block-1 .views-view-grid>.row>.col .views-field-field-image a:after {
+    .views-view-grid .views-field-field-image a:after {
           /*content: "";*/
           content:"\f002";
           color: #fff;
@@ -573,17 +575,17 @@ Custom blocks
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
           opacity: 0; }
     
-  #block-views-block-view-1-block-1 .views-view-grid>.row>.col .views-field-field-image a:hover{
+    .views-view-grid .views-field-field-image a:hover{
     text-decoration: none;
   } 
-        #block-views-block-view-1-block-1 .views-view-grid>.row>.col:hover .views-field-field-image a:after {
+    .views-view-grid:hover .views-field-field-image a:after {
           top: 40%;
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
           opacity: 1;
   
   }
     
-#block-views-block-view-1-block-1 .views-view-grid>.row>.col:hover .views-field-title:after {
+    .views-view-grid:hover .views-field-title:after {
           /*bottom: -15px;*/
           border-color: #BD2A26 transparent transparent;
           border-width: 15px 15px 0 15px;
@@ -595,7 +597,7 @@ Custom blocks
           -webkit-transform: scale(1, 1);
           transform: scale(1, 1); }
         
-    #block-views-block-view-1-block-1 .views-view-grid>.row>.col:hover img {
+    .views-view-grid:hover img {
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
           opacity: 0.3;
           -moz-transform: scale(1.2, 1.2);
@@ -604,15 +606,15 @@ Custom blocks
           -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2); }
     
-        #block-views-block-view-1-block-1 .views-view-grid>.row>.col:hover h2 {
+    .views-view-grid .col:hover h2 {
           color: #fff; }
-        #block-views-block-view-1-block-1 .views-view-grid>.row>.col:hover h5 {
+    .views-view-grid .col:hover span {
           color: #fff; }
-          #block-views-block-view-1-block-1 .views-view-grid>.row>.col:hover h2:before {
+    .views-view-grid .col:hover h2:before {
             height: 100%; }
-      #block-views-block-view-1-block-1 .views-view-grid>.row>.col .views-field-title {
+    .views-view-grid .col .views-field-title {
         position: relative; }
-        #block-views-block-view-1-block-1 .views-view-grid>.row>.col .views-field-title:after {
+    .views-view-grid .views-field-title:after {
           pointer-events: none;
           position: absolute;
           z-index: 2;
@@ -635,7 +637,7 @@ Custom blocks
           border-color: #fff transparent transparent transparent;
           transition-delay: 0.15s; }
 
-        #block-views-block-view-1-block-1 .views-view-grid>.row>.col h2 {
+      .views-view-grid .col h2 {
           background: #fff;
           padding: 33px 42px 30px;
           font-size: 30px;
@@ -649,24 +651,24 @@ Custom blocks
           transition: all 0.3s ease;
           position: relative;
           z-index: 3;         }
-      .edicion #block-views-block-view-1-block-1 .views-view-grid>.row>.col h2 {
-        padding: 15px 5px;
-        font-size:15px;
+      .views-view-grid .col h2 {
+        padding: 15px 0px;
+        font-size:13px;
         }
 
-        #block-views-block-view-1-block-1 .views-view-grid>.row>.col h5{
+      .views-view-grid span{
           margin:10px 5px 0 5px;
           color:#999;
 
         }
         @media (max-width: 1199px) {
-          #block-views-block-view-1-block-1 .views-view-grid>.row>.col h2 {
+      .views-view-grid .col h2 {
             padding: 33px 20px 30px;
             font-size:15px; } }
         @media (max-width: 767px) {
-          #block-views-block-view-1-block-1 .views-view-grid>.row>.col h2 {
+      .views-view-grid .col h2 {
             padding: 20px; } }
-        #block-views-block-view-1-block-1 .views-view-grid>.row>.col h2:before {
+      .views-view-grid .col h2:before{
           content: "";
           background:#BD2A26;
           position: absolute;
@@ -678,8 +680,9 @@ Custom blocks
           -moz-transition: all 0.3s ease;
           -o-transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease; }
-      #block-views-block-view-1-block-1 .views-view-grid>.row>.col img {
+          transition: all 0.3s ease;
+          }
+      .views-view-grid img {
         max-width:100%;
         height: auto;
         -moz-transition: all 1s ease;
@@ -696,12 +699,12 @@ Custom blocks
         -webkit-transform: scale(1, 1);
         transform: scale(1, 1);
 }
-.edicion #block-views-block-view-1-block-1 .views-view-grid>.row>.col img {
+      .views-view-grid img {
         width:100%;
        
 }
 @media (max-width: 767px) {
-    #block-views-block-view-1-block-1 .views-view-grid>.row>.col img {
+      .views-view-grid img {
         width: 100%;
   }
 }
@@ -1763,6 +1766,7 @@ to {
 
 .edicion {
     text-align: center;
+    margin:20px 0;
 }
 
 .edicion img{
@@ -1923,7 +1927,7 @@ left: 38px;
 /*===============================================================
 ======================curso vamos==============================
 =================================================================*/
-#block-system-main .view-cursovamos span a{
+#block-system-main .view-cursovamos span a,.view-somos span a{
     width: 260px;
     text-decoration: none;
     padding: .5rem 1rem;
@@ -1935,13 +1939,13 @@ left: 38px;
     overflow: hidden;
     transition: all .3s ease;
 }
-#block-system-main .view-cursovamos span a:hover {
+#block-system-main .view-cursovamos span a:hover,.view-somos span a:hover {
     padding-right: 50px;
     width: 300px;
     color:#BD2A26;
 
 }
-#block-system-main .view-cursovamos span a:after {
+#block-system-main .view-cursovamos span a:after,.view-somos span a:after {
     transition: all .3s ease;
     content: '';
     width: 100%;
@@ -1951,14 +1955,14 @@ left: 38px;
     top: 0;
     left: -100%;
 }
-#block-system-main .view-cursovamos span a:hover .fa {
+#block-system-main .view-cursovamos span a:hover .fa, .view-somos span a:hover .fa {
     transition: all .3s ease;
     right: 1rem;
 }
-#block-system-main .view-cursovamos span a:hover:after{
+#block-system-main .view-cursovamos span a:hover:after ,.view-somos span a:hover:after{
   left: 0;
 }
-#block-system-main .view-cursovamos .fa {
+#block-system-main .fa {
     margin-left: 2rem;
     position: absolute;
     right: 1rem;

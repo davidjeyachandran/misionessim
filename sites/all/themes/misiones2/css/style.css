@@ -126,6 +126,7 @@ Main Classes
 .navbar {
   border-radius: 0;
   margin-bottom:0;
+  z-index: 1;
 }
 
 .navbar-brand {
