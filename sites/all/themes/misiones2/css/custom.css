@@ -1923,7 +1923,7 @@ left: 38px;
 /*===============================================================
 ======================curso vamos==============================
 =================================================================*/
-#block-system-main span a{
+#block-system-main .view-cursovamos span a{
     width: 260px;
     text-decoration: none;
     padding: .5rem 1rem;
@@ -1935,13 +1935,13 @@ left: 38px;
     overflow: hidden;
     transition: all .3s ease;
 }
-#block-system-main span a:hover {
+#block-system-main .view-cursovamos span a:hover {
     padding-right: 50px;
     width: 300px;
     color:#BD2A26;
 
 }
-#block-system-main span a:after {
+#block-system-main .view-cursovamos span a:after {
     transition: all .3s ease;
     content: '';
     width: 100%;
@@ -1951,14 +1951,14 @@ left: 38px;
     top: 0;
     left: -100%;
 }
-#block-system-main span a:hover .fa {
+#block-system-main .view-cursovamos span a:hover .fa {
     transition: all .3s ease;
     right: 1rem;
 }
-#block-system-main span a:hover:after{
+#block-system-main .view-cursovamos span a:hover:after{
   left: 0;
 }
-#block-system-main .fa {
+#block-system-main .view-cursovamos .fa {
     margin-left: 2rem;
     position: absolute;
     right: 1rem;
