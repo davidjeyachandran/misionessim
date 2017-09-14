@@ -190,17 +190,17 @@
  * @code
  *   $databases['default']['default'] = array(
  *     'driver' => 'mysql',
- *     'database' => 'databasename',
- *     'username' => 'username',
- *     'password' => 'password',
+ *     'database' => 'misionessim',
+ *     'username' => 'root',
+ *     'password' => 'root',
  *     'host' => 'localhost',
  *     'prefix' => '',
  *   );
  *   $databases['default']['default'] = array(
  *     'driver' => 'pgsql',
- *     'database' => 'databasename',
- *     'username' => 'username',
- *     'password' => 'password',
+ *     'database' => 'misionessim',
+ *     'username' => 'root',
+ *     'password' => 'root',
  *     'host' => 'localhost',
  *     'prefix' => '',
  *   );
