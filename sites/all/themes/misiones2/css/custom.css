@@ -544,7 +544,7 @@ Custom blocks
     text-decoration: none;    
   }
   
-    .views-view-grid .views-field-field-image a img{
+    .view-id-vamos .views-view-grid .views-field-field-image a img{
     
     display: block;
     background: #000;
@@ -682,7 +682,7 @@ Custom blocks
           -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
           }
-      .views-view-grid img {
+      .view-id-vamos .views-view-grid img {
         max-width:100%;
         height: auto;
         -moz-transition: all 1s ease;
@@ -699,7 +699,7 @@ Custom blocks
         -webkit-transform: scale(1, 1);
         transform: scale(1, 1);
 }
-      .views-view-grid img {
+      .view-id-vamos .views-view-grid img {
         width:100%;
        
 }
@@ -1971,4 +1971,47 @@ left: 38px;
     bottom: 0;
     display: flex;
     align-items: center;
+}
+
+/*===============================================================
+======================recursos misioneros==============================
+=================================================================*/
+.view-recursos{
+  margin:10px 0;
+}
+.btn-custom{
+  background:#BD2A26;
+  border:1px solid #BD2A26;  
+  border-radius: 10px;
+  padding:5px 20px !important;
+  font-weight: bold;
+  font-size:16px;
+  /*filter:opacity(.8);*/
+  height: 33px;
+  display: table-cell;
+}
+.btn-custom:hover{
+  filter:opacity(.8);
+}
+.btn-custom .file{
+  display: table-cell;
+  width:330px;
+  color:#fff !important;
+  line-height: 1.2;
+}
+.btn-custom .file a{
+  display: table-cell;
+  font-size: 0.6em;
+  color: #dedede;
+  margin: 0 15px;
+}
+.btn-custom .file-icon{
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 20px;
+    border-left: 1px solid #e46969;
+    padding-left:15px;
+    float:right;
+    position: relative;
+    bottom: 9px;
 }
