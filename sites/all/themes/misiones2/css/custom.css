@@ -506,231 +506,8 @@ Custom blocks
 }
 
 /* block view */
+/*  DELETED  */
 
-/*.view-id-vamos {
-  margin-top: -123px;
-  position: relative;
-  z-index: 2; }*/
-  @media (max-width: 1199px) {
-    /*.view-id-vamos {
-      margin-top: -86px; }*/ }
-  @media (max-width: 767px) {
-    /*.view-id-vamos {
-      margin-top: 30px; }*/ }
-  .view-id-vamos .views-view-grid>.row {
-    margin-bottom:0px; }
-   /*.edicion .view-id-vamos .views-view-grid>.row {
-    margin-bottom:50px; }*/
-    @media (max-width: 767px) {
-      .view-id-vamos .views-view-grid>.row {
-        margin: 0 -5px; } }
-    .view-id-vamos .views-view-grid.col {
-      margin-bottom: 10px;
-      visibility: hidden; }
-      @media (max-width: 767px) {
-        .view-id-vamos .views-view-grid.col {
-          float: none;
-          padding: 0;
-          width: 100%; } }
-    
-  .view-id-vamos .views-view-grid .views-field-field-image {
-        display: block;
-        background: #000;
-        position: relative;
-        overflow: hidden;
-  }
-  
-  .view-id-vamos h2 {
-    font-size: 1.6em;
-    min-height: 50px;
-  }
-
-  .view-id-vamos .views-view-grid .views-field-title a:hover{
-    text-decoration: none;    
-  }
-  
-  .view-id-vamos .views-view-grid .views-field-field-image a img {
-    display: block;
-    background: #000;
-    position: relative;
-    overflow: hidden;
-/*    width: 100%;
-    height:100%;*/
-  }
-      
-  .view-id-vamos .views-view-grid .views-field-field-image a:after {
-          /*content: "";*/
-          content:"\f002";
-          color: #fff;
-          font-size: 60px;
-          line-height: 1em;
-          position: absolute;
-          top: 10%;
-          left: 0;
-          z-index: 5;
-          width: 100%;
-          text-align: center;
-          font-family: "FontAwesome";
-          margin: 0;
-          -moz-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-          opacity: 0; }
-    
-.view-id-vamos .views-view-grid .views-field-field-image a:hover{
-  text-decoration: none;
-}
-
-.view-id-vamos .views-view-grid:hover .views-field-field-image a:after {
-  top: 40%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-.view-id-vamos .views-view-grid:hover .views-field-title:after {
-  border-color: #BD2A26 transparent transparent;
-  border-width: 15px 15px 0 15px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -o-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-        
-.view-id-vamos .views-view-grid:hover img {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3;
-  -moz-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-  -o-transform: scale(1.2, 1.2);
-  -webkit-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2); 
-}
-
-.view-id-vamos .views-view-grid:hover h2 {
-  color: #fff;
-}
-
-.view-id-vamos .views-view-grid:hover h5 {
-  color: #fff;
-}
-
-.view-id-vamos .views-view-grid:hover h2:before {
-  height: 100%;
-}
-
-.view-id-vamos .views-view-grid .views-field-title {
-  position: relative;
-}
-
-.view-id-vamos .views-view-grid .views-field-title:after {
-  pointer-events: none;
-  position: absolute;
-  z-index: 2;
-  content: '';
-  border-style: solid;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition-property: bottom;
-  transition-property: bottom;
-  left: calc(50% - 15px);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -o-transform: scale(0, 0);
-  -webkit-transform: scale(0, 0);
-  transform: scale(0, 0);
-  bottom: 0;
-  border-width: 0px 0px 0 0px;
-  border-color: #fff transparent transparent transparent;
-  transition-delay: 0.15s;
-}
-
-.view-id-vamos .views-view-grid .col h2 {
-  background: #fff;
-  padding: 33px 42px 30px;
-  font-size: 30px;
-  line-height: 1em;
-  color: #333333;
-  font-family: "Adamina", serif;
-  margin: 0;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 3;
-}
-
-.edicion .view-id-vamos .views-view-grid .col h2 {
-  padding: 15px 0px;
-  font-size:13px;
-}
-
-.view-id-vamos .views-view-grid span{
-  margin:10px 5px 0 5px;
-  color:#999;
-}
-
-@media (max-width: 1199px) {
-  .view-id-vamos .views-view-grid .col h2 {
-    padding: 33px 20px 30px;
-    font-size:15px;
-  } 
-}
-@media (max-width: 767px) {
-  .view-id-vamos .views-view-grid .col h2 {
-    padding: 20px;
-  } 
-}
-
-.view-id-vamos .views-view-grid .col h2:before {
-  content: "";
-  background:#BD2A26;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  z-index: -1;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.view-id-vamos .views-view-grid img {
-  max-width:100%;
-  height: auto;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-  position: relative;
-  z-index: 1;
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -o-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-.edicion .view-id-vamos .views-view-grid img {
-        width:100%;
-       
-}
-@media (max-width: 767px) {
-  .view-id-vamos .views-view-grid img {
-      width: 100%;
-  }
-}
 
 /* block-slider */
 
@@ -1789,6 +1566,7 @@ to {
 
 .edicion {
     text-align: center;
+    margin:20px 0;
 }
 
 .edicion img{
@@ -1912,9 +1690,7 @@ position: absolute;
 top: 0px;
 left: 38px;
 }
-/*===============================================================
-======================la revista=================================
-=================================================================*/
+/* ------ la revista ------ */
 
 .caja-blog{
   background:#f5f5f5;
@@ -1937,19 +1713,16 @@ left: 38px;
   margin:20%;
 }
 
-/*===============================================================
-======================blog completo==============================
-=================================================================*/
+/* ------ blog completo ---- */
 .box-buttonSpecial{
   text-align: center;
 }
 .revista-semana-imagen{
   margin:40px 0;
 }
-/*===============================================================
-======================curso vamos==============================
-=================================================================*/
-#block-system-main .view-cursovamos span a{
+
+/* ------ curso vamos ------ */
+#block-system-main .view-cursovamos span a,.view-somos span a{
     width: 260px;
     text-decoration: none;
     padding: .5rem 1rem;
@@ -1961,13 +1734,13 @@ left: 38px;
     overflow: hidden;
     transition: all .3s ease;
 }
-#block-system-main .view-cursovamos span a:hover {
+#block-system-main .view-cursovamos span a:hover,.view-somos span a:hover {
     padding-right: 50px;
     width: 300px;
     color:#BD2A26;
 
 }
-#block-system-main .view-cursovamos span a:after {
+#block-system-main .view-cursovamos span a:after,.view-somos span a:after {
     transition: all .3s ease;
     content: '';
     width: 100%;
@@ -1977,11 +1750,11 @@ left: 38px;
     top: 0;
     left: -100%;
 }
-#block-system-main .view-cursovamos span a:hover .fa {
+#block-system-main .view-cursovamos span a:hover .fa, .view-somos span a:hover .fa {
     transition: all .3s ease;
     right: 1rem;
 }
-#block-system-main .view-cursovamos span a:hover:after{
+#block-system-main .view-cursovamos span a:hover:after ,.view-somos span a:hover:after{
   left: 0;
 }
 #block-system-main .fa {
@@ -1993,4 +1766,43 @@ left: 38px;
     bottom: 0;
     display: flex;
     align-items: center;
+}
+
+/* ------ recursos misioneros ------ */
+.view-recursos{
+  margin:10px 0;
+}
+.btn-custom{
+  background:#BD2A26;
+  border:1px solid #BD2A26;  
+  border-radius: 10px;
+  padding:5px 20px !important;
+  font-weight: bold;
+  font-size:16px;
+  /*filter:opacity(.8);*/
+  height: 33px;
+  display: table-cell;
+}
+
+.btn-custom .file{
+  display: table-cell;
+  width:330px;
+  color:#fff !important;
+  line-height: 1.2;
+}
+.btn-custom .file a{
+  display: table-cell;
+  font-size: 0.6em;
+  color: #dedede;
+  margin: 0 15px;
+}
+.btn-custom .file-icon{
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 20px;
+    border-left: 1px solid #e46969;
+    padding-left:15px;
+    float:right;
+    position: relative;
+    bottom: 9px;
 }

@@ -126,6 +126,7 @@ Main Classes
 .navbar {
   border-radius: 0;
   margin-bottom:0;
+  z-index: 1;
 }
 
 .navbar-brand {
@@ -631,6 +632,7 @@ Structure
 
 #footer{
   color: #777777;
+  margin-top:50px;
 }
 
 /* regions */ 
