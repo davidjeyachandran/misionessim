@@ -438,7 +438,7 @@ nav#main-nav-container.stickUpTop {
   left: 0;
   top: 0;
   clear: none;
-  z-index: 5001;
+  z-index: 900;
 }
 
 nav#main-nav-container.stickUpHolder {
