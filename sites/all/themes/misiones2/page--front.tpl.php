@@ -158,7 +158,7 @@
               <div  class="views-view-grid">
                 <div class="row">
                   <div class="col col-sm-4">
-                    <div class="views-field views-field-title"><span class="field-content"><a href="node/3.html" hreflang="en">Sirve Con Nosotros</a></span></div>
+                    <h3><a href="node/3.html" hreflang="en">Sirve Con Nosotros</a></h3>
                     <div class="views-field views-field-field-image">
                       <div class="field-content">  <a href="node/3.html"><img src="<?php print $path ?>/images/servir.jpg" width="370" height="267" alt="4" typeof="foaf:Image" />
                         </a>
@@ -166,7 +166,7 @@
                     </div>
                   </div>
                   <div class="col col-sm-4">
-                    <div class="views-field views-field-title"><span class="field-content"><a href="node/2.html" hreflang="en">Ora con nosotros</a></span></div>
+                    <h3><a href="node/2.html" hreflang="en">Ora con nosotros</a></h3>
                     <div class="views-field views-field-field-image">
                       <div class="field-content">  <a href="node/2.html"><img src="<?php print $path ?>/images/orar.jpg" width="370" height="267" alt="2" typeof="foaf:Image" />
                         </a>
@@ -174,7 +174,7 @@
                     </div>
                   </div>
                   <div class="col col-sm-4">
-                    <div class="views-field views-field-title"><span class="field-content"><a href="node/1.html" hreflang="en">Da a la obra</a></span></div>
+                    <h3><a href="node/2.html" hreflang="en">Da a la obra</a></h3>
                     <div class="views-field views-field-field-image">
                       <div class="field-content">  <a href="node/1.html"><img src="<?php print $path ?>/images/dar.jpg" width="370" height="267" alt="1" typeof="foaf:Image" />
                         </a>
@@ -191,7 +191,7 @@
   </div>
 </div>
 
-<div id="featured">
+<div class="featured">
   <div class="row">
     <div class="container">
       <div class="col-md-3"></div>
