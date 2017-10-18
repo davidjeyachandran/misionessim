@@ -92,8 +92,7 @@
 <?php include 'header.tpl.php'; ?> 
 
 <div id="header-bottom" class="header-bottom-wrapper">
-    <div class="region region-header-bottom">
-    <div id="block-slider" class="block block-block-content block-block-contentae1f4314-8d5e-42b8-93fc-38832c7e0dab">
+
 <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="columns-container">
   <div class="row" id="slider_row">
     <div class="center_column col-xs-12" id="top_column">  
@@ -144,10 +143,6 @@
     </div>
   </div>
 </div></div>
-      
-  </div>
-
-  </div>
 
 </div>
 
@@ -196,10 +191,19 @@
   </div>
 </div>
 
-<div id="featured" class="featured-wrapper"></div>
-<div id="featured-2"></div>
-<div id="featured-3"></div>
-<div id="featured-4"></div>
+<div id="featured">
+  <div class="row">
+    <div class="container">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h2>Qué es SIM?</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YIIw-r8ZYAY" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+</div>
+</div>
+
 
 <footer id="footer">
 
