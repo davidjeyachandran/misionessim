@@ -106,8 +106,8 @@
                 <div class="homeslider-description">
                   <div class="container">
                     <div>
-                      <h2>Misionessim</h2>
-                      <h3>...</h3>
+                      <h2>Nadie</h2>
+                      <h3>debe vivir y morir sin haber escuchado</h3>
                     </div>
                   </div>
                 </div>
@@ -119,8 +119,8 @@
                 <div class="homeslider-description">
                   <div class="container">
                     <div>
-                      <h2>Misionessim</h2>
-                      <h3>...</h3>
+                      <h2>Facilitamos</h2>
+                      <h3>la participación en misiones</h3>
                     </div>
                   </div>
                 </div>
@@ -128,12 +128,12 @@
               
               <li class="homeslider-container">
                 <a href="#">
-                  <img src="<?php print $path ?>/images/slider 3.jpg"/></a>
+                  <img src="<?php print $path ?>/images/slider3.jpg"/></a>
                 <div class="homeslider-description">
                   <div class="container">
                     <div>
-                      <h2 style="left: auto; visibility: inherit; opacity: 1;">Misionessim</h2>
-                      <h3 style="right: auto; visibility: inherit; opacity: 1;">...</h3>
+                      <h2>Hacemos</h2>
+                      <h3>discípulos que hacen discípulos</h3>
                     </div>
                   </div>
                 </div>
@@ -165,7 +165,7 @@
                   <div class="col col-sm-4">
                     <div class="views-field views-field-title"><span class="field-content"><a href="node/3.html" hreflang="en">Sirve Con Nosotros</a></span></div>
                     <div class="views-field views-field-field-image">
-                      <div class="field-content">  <a href="node/3.html"><img src="<?php print $path ?>/images/banner-3.jpg" width="370" height="267" alt="4" typeof="foaf:Image" />
+                      <div class="field-content">  <a href="node/3.html"><img src="<?php print $path ?>/images/servir.jpg" width="370" height="267" alt="4" typeof="foaf:Image" />
                         </a>
                       </div>
                     </div>
@@ -173,7 +173,7 @@
                   <div class="col col-sm-4">
                     <div class="views-field views-field-title"><span class="field-content"><a href="node/2.html" hreflang="en">Ora con nosotros</a></span></div>
                     <div class="views-field views-field-field-image">
-                      <div class="field-content">  <a href="node/2.html"><img src="<?php print $path ?>/images/banner-2.jpg" width="370" height="267" alt="2" typeof="foaf:Image" />
+                      <div class="field-content">  <a href="node/2.html"><img src="<?php print $path ?>/images/orar.jpg" width="370" height="267" alt="2" typeof="foaf:Image" />
                         </a>
                       </div>
                     </div>
@@ -181,7 +181,7 @@
                   <div class="col col-sm-4">
                     <div class="views-field views-field-title"><span class="field-content"><a href="node/1.html" hreflang="en">Da a la obra</a></span></div>
                     <div class="views-field views-field-field-image">
-                      <div class="field-content">  <a href="node/1.html"><img src="<?php print $path ?>/images/w.jpg" width="370" height="267" alt="1" typeof="foaf:Image" />
+                      <div class="field-content">  <a href="node/1.html"><img src="<?php print $path ?>/images/dar.jpg" width="370" height="267" alt="1" typeof="foaf:Image" />
                         </a>
                       </div>
                     </div>
