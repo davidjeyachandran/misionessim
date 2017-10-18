@@ -226,6 +226,11 @@
                     <span>YouTube</span>
                     </a>
                   </li>
+                  <li class="email">
+                    <a title="Email" href="/contact" target="_blank">
+                    <span>Email</span>
+                    </a>
+                  </li>
                 </ul>
               </section>
             </div>

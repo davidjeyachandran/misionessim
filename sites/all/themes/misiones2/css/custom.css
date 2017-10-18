@@ -1345,22 +1345,34 @@ to {
           -ms-transform: scale(1);
           -o-transform: scale(1);
           transform: scale(1); }
-      #social_block ul li.facebook a:before {
-        content: "\f09a"; }
-      #social_block ul li.twitter a:before {
-        content: "\f099"; }
-      #social_block ul li.rss a:before {
-        content: "\f09e"; }
-      #social_block ul li.youtube a:before {
-        content: "\f167"; }
-      #social_block ul li.google-plus a:before {
-        content: "\f0d5"; }
-      #social_block ul li.pinterest a:before {
-        content: "\f0d2"; }
-      #social_block ul li.vimeo a:before {
-        content: "\f194"; }
-      #social_block ul li.instagram a:before {
-        content: "\f16d"; }
+#social_block ul li.facebook a:before {
+  content: "\f09a";
+}
+#social_block ul li.twitter a:before {
+  content: "\f099";
+}
+#social_block ul li.rss a:before {
+  content: "\f09e";
+}
+#social_block ul li.youtube a:before {
+  content: "\f167";
+}
+#social_block ul li.google-plus a:before {
+  content: "\f0d5";
+}
+#social_block ul li.pinterest a:before {
+  content: "\f0d2";
+}
+#social_block ul li.vimeo a:before {
+  content: "\f194";
+}
+#social_block ul li.instagram a:before {
+  content: "\f16d";
+}
+#social_block ul li.email a:before {
+  content: "\f003";
+}
+
   #social_block h4 {
     float: right;
     margin-bottom: 0;
