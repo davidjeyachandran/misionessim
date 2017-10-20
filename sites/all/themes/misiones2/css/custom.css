@@ -677,7 +677,7 @@ left: 38px;
   padding-top: 50px;
 }
 
-.buttonSpecial {
+.box-buttonSpecial .buttonSpecial {
     background: #BD2A26;
     font-size: 22px;
     color: #ffffff;
@@ -687,8 +687,8 @@ left: 38px;
     transition: all 0.3s ease;
 }
 
-.buttonSpecial:hover{
-  background:#ffffff;
-  color:#000000;
-  border:1px solid #BD2A26;
+.box-buttonSpecial .buttonSpecial:hover{
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #BD2A26 !important;
 }
