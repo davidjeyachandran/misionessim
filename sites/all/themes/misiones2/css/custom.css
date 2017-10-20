@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 /**************************************
 Custom Structure
 **************************************/
@@ -48,7 +47,7 @@ footer .footer-top .socialfeedblock.footer {
 footer .footer-top .socialfeedblock.footer h4:after {
     display: none; 
 }
-      
+
 @media (max-width: 767px) {
     footer .footer-top .socialfeedblock.footer {
     padding: 0 15px;
@@ -109,7 +108,7 @@ footer .footer-top h4 {
     right: 0;
     top: 1px;
   }
-    
+
   footer .footer-top h4.active:after {
     content: "\f056";
   }
@@ -202,10 +201,8 @@ footer .footer-top .blockcategories_footer {
   clear: left;
 }
 
-
 /* block view */
 /*  DELETED  */
-
 
 /* block-slider */
 
@@ -234,11 +231,8 @@ footer .footer-top .blockcategories_footer {
   transform: scale(1.2, 1.2); 
 }
 
-
 /* block customtabs */
 
-
-  
 /* block social */
 
 .btn-facebook:hover,
@@ -286,8 +280,8 @@ footer .footer-top .blockcategories_footer {
 
 @media (max-width: 1199px) {
   .facebook-socialfeed .fb-like-box iframe {
-    overflow-y: scroll; } }
-
+    overflow-y: scroll; } 
+  }
 
 #social_block {
   clear: left;
@@ -405,7 +399,6 @@ footer .footer-top .blockcategories_footer {
         text-align: center; }
 }
 
-
 /* Code for the Magazine Vamos display all page */
 .views-field-field-cover-image .field-content img {
     height: 283px;
@@ -419,11 +412,11 @@ footer .footer-top .blockcategories_footer {
 
 .edicion {
     text-align: center;
-    margin:20px 0;
+    margin: 20px 0;
 }
 
 .edicion img{
-  width:370px;
+  width: 370px;
 }
 
 #banner {
@@ -488,7 +481,6 @@ margin:15px 0px -31px 0px;
 margin:15px 0px -5px;
 }
 
-
 #shadow-line{
 height: 50px;
 
@@ -535,7 +527,6 @@ text-transform: uppercase;
 .view-id-recursos .views-exposed-form .views-exposed-widget .form-submit {
 margin-top: 2.6em;
 }
-
 
 /* Home page icon for revista vamos */
 #revista-front-page-icon {
@@ -627,7 +618,7 @@ left: 38px;
 }
 .btn-custom{
   background:#BD2A26;
-  border:1px solid #BD2A26;  
+  border:1px solid #BD2A26;
   border-radius: 10px;
   padding:5px 20px !important;
   font-weight: bold;
@@ -658,4 +649,25 @@ left: 38px;
     float:right;
     position: relative;
     bottom: 9px;
+}
+
+.view-id-vamos {
+  clear: both;
+  padding-top: 50px;
+}
+
+.buttonSpecial {
+    background: #BD2A26;
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 20px 40px;
+    transition: all 0.3s ease;
+}
+
+.buttonSpecial:hover{
+  background:#ffffff;
+  color:#000000;
+  border:1px solid #BD2A26;
 }
