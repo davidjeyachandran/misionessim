@@ -280,7 +280,7 @@ footer .footer-top .blockcategories_footer {
 
 @media (max-width: 1199px) {
   .facebook-socialfeed .fb-like-box iframe {
-    overflow-y: scroll; } 
+    overflow-y: scroll; }
   }
 
 #social_block {
@@ -405,18 +405,13 @@ footer .footer-top .blockcategories_footer {
     width: 200px;
 }
 
+.view-revista-vamos-banner .cover:hover {
+  opacity: 0.7;
+}
+
 .revistas {
     margin: 0 auto;
     width: 800px;
-}
-
-.edicion {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.edicion img{
-  width: 370px;
 }
 
 #banner {
@@ -507,16 +502,42 @@ right:-30px;
 background-color:#0CAFD7;
 }
 
-#portada_title 
-{
+#portada_title {
 padding-top: 75px;
 }
 
-.edicion h3
-{
-height: 42px;
-line-height: 19px;
+.edicion {
+  text-align: center;
+  margin: 15px 0;
 }
+
+.edicion:hover {
+  opacity: 0.7;
+}
+
+.edicion img{
+  width: 370px;
+}
+
+.edicion .heading-wrapper {
+  height: 60px;
+  overflow: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.edicion h2 {
+  margin: 0;
+  text-align: center;
+  color: #333333;
+  font-size: 19px;
+}
+
+.edicion h5 {
+  margin-top: 0px;
+  color: #999;
+}
+
 
 .edic_ante
 {
