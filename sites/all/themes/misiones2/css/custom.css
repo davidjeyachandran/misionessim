@@ -4,34 +4,41 @@
 Custom Structure
 **************************************/
 
+body {
+  font-family: sans-serif;
+}
+
+#main-content {
+  padding-top: 10px;
+}
+
 #main-content h3 {
   text-align: center;
 }
 
-/* footer */
+.featured h2 {
+  text-align: center;
+}
 
+.featured {
+  background-color: #efefef;
+  margin-top: 40px;
+  padding-bottom: 24px;
+}
+
+/* footer */
 footer .footer-top{
   border-top: 1px solid #e4e4e4;
   padding: 20px 0;
 }
 
-footer .middle-footer-wrapper{
-  border-top: 1px solid #e4e4e4;
-}
-
 footer .middle-footer{
   padding: 10px 0;
-    font-family: "Adamina", serif;
     text-align: center;
   }
 
-footer .bottom-footer-wrapper{
-  border-top: 1px solid #e4e4e4;
-}
-
 footer .bottom-footer{
   padding: 10px 0;
-    font-family: "Adamina", serif;
     text-align: center;
 }
 
@@ -90,7 +97,6 @@ footer .footer-top a:hover {
 }
 
 footer .footer-top h4 {
-  font: normal 22px/22px "Adamina", serif;
   color: #111;
   margin: 0 0 41px 0;
 }

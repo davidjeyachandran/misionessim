@@ -30,7 +30,7 @@
       margin: 0;
       padding: 0 0 17px;
       position: relative;
-      font-family: "Adamina", serif; }
+    }
       @media (max-width: 1199px) {
         #homepage-slider .homeslider-description h2 {
           font-size: 40px;
@@ -47,12 +47,12 @@
     #homepage-slider .homeslider-description h3 {
       font-size: 36px;
       line-height: 37px;
-      text-transform: uppercase;
+      text-transform: none;
       color: #c9eff8;
       margin: 0;
       padding: 0;
       position: relative;
-      font-family: "Adamina", serif; }
+    }
       @media (max-width: 1199px) {
         #homepage-slider .homeslider-description h3 {
           font-size: 30px;
@@ -90,7 +90,7 @@
     #homepage-slider .homeslider-description .container {
       padding: 0; } }
   #homepage-slider .homeslider-description .container > div {
-    background: rgba(0, 54, 91, 0.65);
+    background: rgba(0, 54, 91, 0.4);
     padding: 70px 30px;
     overflow: hidden;
     -moz-transition: all 0.3s ease;
