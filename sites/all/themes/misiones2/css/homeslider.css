@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /******************************************************************************
-						Home Page Slider
+            Home Page Slider
 *******************************************************************************/
 #homepage-slider {
   overflow: hidden;
@@ -28,8 +28,9 @@
       text-transform: uppercase;
       color: white;
       margin: 0;
-      padding: 0 0 17px;
+      padding: 0px;
       position: relative;
+    text-align:left;
     }
       @media (max-width: 1199px) {
         #homepage-slider .homeslider-description h2 {
@@ -52,6 +53,7 @@
       margin: 0;
       padding: 0;
       position: relative;
+    text-align:left;
     }
       @media (max-width: 1199px) {
         #homepage-slider .homeslider-description h3 {
@@ -73,7 +75,7 @@
   transform: scale(1.2, 1.2); }
 
 /*****************************************************************************
-						BXSlider Styles
+            BXSlider Styles
 ********************************************************************************/
 #homepage-slider .homeslider-container {
   position: relative; }
@@ -84,19 +86,23 @@
 #homepage-slider .homeslider-description {
   position: absolute;
   left: 0;
-  top: 0;
-  width: 100%; }
+  bottom: 0;
+  width: 40%; }
   @media (min-width: 1200px) {
     #homepage-slider .homeslider-description .container {
-      padding: 0; } }
+      padding: 0px !important;
+    }
+    }
   #homepage-slider .homeslider-description .container > div {
-    background: rgba(0, 54, 91, 0.4);
-    padding: 70px 30px;
-    overflow: hidden;
-    -moz-transition: all 0.3s ease;
+    /*background: rgba(0, 54, 91, 0.4);*/
+    padding: 30px 20px;
+     overflow: hidden;
+   -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
     @media (max-width: 1199px) {
       #homepage-slider .homeslider-description .container > div {
         padding: 37px 30px 60px; } }
