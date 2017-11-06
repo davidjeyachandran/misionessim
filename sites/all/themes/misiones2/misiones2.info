@@ -34,6 +34,7 @@ scripts[] = js/vendor/jquery.bxslider.min.js
 scripts[] = js/homeslider.js
 scripts[] = js/view-1.init.js
 scripts[] = js/device.min.js
+scripts[] = js/stick.up.js
 
 
 regions[header] = Header
