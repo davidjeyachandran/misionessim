@@ -551,7 +551,7 @@ left: 38px;
 }
 
 /* ------ curso vamos ------ */
-#block-system-main .view-cursovamos span a,.view-somos span a{
+#block-system-main .view-cursovamos span a,.view-id-quienessomos span a{
     width: 260px;
     text-decoration: none;
     padding: .5rem 1rem;
@@ -563,13 +563,13 @@ left: 38px;
     overflow: hidden;
     transition: all .3s ease;
 }
-#block-system-main .view-cursovamos span a:hover,.view-somos span a:hover {
+#block-system-main .view-cursovamos span a:hover,.view-id-quienessomos span a:hover {
     padding-right: 50px;
     width: 300px;
     color:#BD2A26;
 
 }
-#block-system-main .view-cursovamos span a:after,.view-somos span a:after {
+#block-system-main .view-cursovamos span a:after,.view-id-quienessomos span a:after {
     transition: all .3s ease;
     content: '';
     width: 100%;
@@ -579,11 +579,11 @@ left: 38px;
     top: 0;
     left: -100%;
 }
-#block-system-main .view-cursovamos span a:hover .fa, .view-somos span a:hover .fa {
+#block-system-main .view-cursovamos span a:hover .fa, .view-id-quienessomos span a:hover .fa {
     transition: all .3s ease;
     right: 1rem;
 }
-#block-system-main .view-cursovamos span a:hover:after ,.view-somos span a:hover:after{
+#block-system-main .view-cursovamos span a:hover:after ,.view-id-quienessomos span a:hover:after{
   left: 0;
 }
 #block-system-main .fa {
