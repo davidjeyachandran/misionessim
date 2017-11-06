@@ -265,22 +265,18 @@ Main Classes
   }
 }
 
-.block .title_block,
-.block h4 {
-  font: normal 30px/1em "Adamina", serif;
+.block .title_block {
+  font: normal 30px/1em "Helvetica Neue", sans-serif;
   color: #555454;
   margin: 0 0 20px 0; }
   @media (max-width: 1199px) {
-    .block .title_block,
-    .block h4 {
-      font: normal 20px/1em "Adamina", serif; } }
+    .block .title_block {
+      font: normal 20px/1em "Helvetica Neue", sans-serif; } }
   @media (max-width: 767px) {
-    .block .title_block,
-    .block h4 {
+    .block .title_block {
       position: relative;
       padding-right: 40px; }
-      .block .title_block:after,
-      .block h4:after {
+      .block .title_block:after {
         display: block;
         font-family: "FontAwesome";
         content: "";
@@ -291,17 +287,14 @@ Main Classes
         width: 36px;
         font-size: 26px;
         font-weight: normal; }
-      .block .title_block.active:after,
-      .block h4.active:after {
+      .block .title_block.active:after {
         content: ""; } }
-  .block .title_block a,
-  .block h4 a {
+  .block .title_block a {
     color: #555454;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    .block .title_block a:hover,
-    .block h4 a:hover {
+    .block .title_block a:hover {
       color: #333333; }
 /*.block .list-block {
   margin-top: -8px; }*/
