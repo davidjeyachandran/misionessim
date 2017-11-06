@@ -243,55 +243,6 @@ footer .footer-top .blockcategories_footer {
 /* block customtabs */
 
 /* block social */
-
-.btn-facebook:hover,
-.btn-twitter:hover,
-.btn-google-plus:hover,
-.btn-pinterest:hover {
-  border-color: white; }
-
-.btn-facebook i {
-  color: #435f9f; }
-.btn-facebook:hover {
-  color: white;
-  background-color: #435f9f; }
-  .btn-facebook:hover i {
-    color: white; }
-
-.btn-twitter i {
-  color: #00aaf0; }
-.btn-twitter:hover {
-  color: white;
-  background-color: #00aaf0; }
-  .btn-twitter:hover i {
-    color: white; }
-
-.facebook-socialfeed,
-.facebook-socialfeed span,
-.facebook-socialfeed span iframe[style] {
-  max-width: 100%; }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .facebook-socialfeed,
-    .facebook-socialfeed span,
-    .facebook-socialfeed span iframe[style] {
-      min-height: 300px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .facebook-socialfeed,
-    .facebook-socialfeed span,
-    .facebook-socialfeed span iframe[style] {
-      min-height: 360px; } }
-
-@media (max-width: 767px) {
-  .fb-like-box,
-  .fb-like-box span,
-  .fb-like-box span iframe[style] {
-    width: 100% !important; } }
-
-@media (max-width: 1199px) {
-  .facebook-socialfeed .fb-like-box iframe {
-    overflow-y: scroll; }
-  }
-
 #social_block {
   clear: left;
   float: none;
