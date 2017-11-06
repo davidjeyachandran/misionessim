@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Adamina);
+@import url(https://fonts.googleapis.com/css?family=Helvetica Neue);
 
 @charset "UTF-8";
 
@@ -23,7 +23,7 @@ body{
 }
 
 .edic_ante{
-  font: normal 20px/24px "Adamina", serif;
+  font: normal 20px/24px;
   color: #555454;
   padding: 70px 0 20px 0;
   border-bottom: 1px solid #e3e3e3;
@@ -410,7 +410,7 @@ nav #top-nav-container{
 }
 
 #top-navbar-row-1  ul.menu li a {
-  font-family: "Adamina", serif;
+  font-family: "Helvetica Neue", sans-serif;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 21px;
@@ -475,7 +475,7 @@ nav#main-nav-container .navbar-toggle:hover span.icon-bar{
 
 nav#main-nav-container .navbar-title {
   display: none;
-  font: normal 15px/20px "Adamina", serif;
+  font: normal 15px/20px "Helvetica Neue", sans-serif;
     text-transform: uppercase;
     color: #fff;
 }
@@ -516,7 +516,7 @@ nav#main-nav-container #block-mainnavigation {
 }
 
 #main-navbar ul.navbar-nav > li > a {
-    font: normal 15px/20px "Adamina", serif;
+    font: normal 15px/20px "Helvetica Neue", sans-serif;
     text-transform: uppercase;
     color: #fff;
     display: block;
@@ -781,7 +781,7 @@ Blocks
     color:#000000;
     height: 40px;
     border: none;
-    font-family: "Adamina", serif;
+    font-family: "Helvetica Neue", sans-serif;
   box-shadow: none;
   width: 100%;
 }
