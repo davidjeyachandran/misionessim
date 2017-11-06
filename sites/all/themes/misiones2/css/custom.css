@@ -8,6 +8,10 @@ body {
   font-family: sans-serif;
 }
 
+.center {
+  text-align: center;
+}
+
 #main-content {
   padding-top: 10px;
 }
