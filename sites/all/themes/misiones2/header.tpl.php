@@ -1,5 +1,5 @@
 <?php $path =  base_path() . path_to_theme();?>
-<nav class="navbar" id="top-nav-container" role="navigation">
+<nav id="top-nav-container" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <div class="region region-header">
