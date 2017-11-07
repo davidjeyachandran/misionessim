@@ -88,7 +88,6 @@
 
 <?php $path =  base_path() . path_to_theme();?>
 
-<div id="toTop"></div>
 <?php include 'header.tpl.php'; ?>
 
 <div id="header-bottom" class="header-bottom-wrapper">

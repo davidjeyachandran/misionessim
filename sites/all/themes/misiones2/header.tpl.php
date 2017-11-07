@@ -1,5 +1,4 @@
 <?php $path =  base_path() . path_to_theme();?>
-<div id="toTop"></div>
 <nav class="navbar" id="top-nav-container" role="navigation">
   <div class="container">
     <div class="navbar-header">

@@ -86,7 +86,7 @@
  */
 ?>
 
-<div id="toTop"></div>
+
 <?php include 'header.tpl.php'; ?> 
 <div id="content" class="container"><div class="section">
   <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
