@@ -12,6 +12,10 @@ body {
   text-align: center;
 }
 
+#header_logo img {
+  padding: 15px 0;
+}
+
 #main-content {
   padding-top: 10px;
 }
@@ -28,6 +32,15 @@ body {
   background-color: #efefef;
   margin-top: 40px;
   padding-bottom: 24px;
+}
+
+.navbar {
+  min-height: 60px;
+  height: 78px;
+}
+
+#header-bottom {
+  background-color: black;
 }
 
 /* footer */
@@ -59,7 +72,7 @@ footer .footer-top .socialfeedblock.footer {
 }
 
 footer .footer-top .socialfeedblock.footer h4:after {
-    display: none; 
+    display: none;
 }
 
 @media (max-width: 767px) {
@@ -220,7 +233,7 @@ footer .footer-top .blockcategories_footer {
 /* block-slider */
 
 #block-slider{
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 #block-slider img.header-bottom-image{
@@ -233,7 +246,7 @@ footer .footer-top .blockcategories_footer {
   -moz-transition: all 15s linear;
   -o-transition: all 15s linear;
   -webkit-transition: all 15s linear;
-  transition: all 15s linear; 
+  transition: all 15s linear;
 }
 
 #block-slider img.header-bottom-image:hover{
@@ -241,7 +254,7 @@ footer .footer-top .blockcategories_footer {
   -ms-transform: scale(1.2, 1.2);
   -o-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2); 
+  transform: scale(1.2, 1.2);
 }
 
 /* block customtabs */
@@ -250,7 +263,7 @@ footer .footer-top .blockcategories_footer {
 #social_block {
   clear: left;
   float: none;
-  margin: 0; 
+  margin: 0;
 }
 
 #social_block ul {
