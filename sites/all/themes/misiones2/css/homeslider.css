@@ -18,8 +18,8 @@
     text-align: center;
     cursor: pointer; }
     #homepage-slider .homeslider-description h2 {
-      font-size: 60px;
-      line-height: 66px;
+      font-size: 90px;
+      line-height: 80px;
       text-transform: uppercase;
       color: white;
       margin: 0;
@@ -29,20 +29,20 @@
     }
       @media (max-width: 1199px) {
         #homepage-slider .homeslider-description h2 {
-          font-size: 40px;
+          font-size: 60px;
           line-height: 1em; } }
       @media (max-width: 767px) {
         #homepage-slider .homeslider-description h2 {
-          font-size: 30px;
+          font-size: 40px;
           line-height: 1em; } }
       @media (max-width: 479px) {
         #homepage-slider .homeslider-description h2 {
-          font-size: 20px;
+          font-size: 34px;
           line-height: 1em;
           padding: 0; } }
     #homepage-slider .homeslider-description h3 {
-      font-size: 36px;
-      line-height: 37px;
+      font-size: 44px;
+      line-height: 40px;
       text-transform: none;
       color: #c9eff8;
       margin: 0;
@@ -52,11 +52,11 @@
     }
       @media (max-width: 1199px) {
         #homepage-slider .homeslider-description h3 {
-          font-size: 30px;
+          font-size: 38px;
           line-height: 1em; } }
       @media (max-width: 767px) {
         #homepage-slider .homeslider-description h3 {
-          font-size: 20px;
+          font-size: 24px;
           line-height: 1em; } }
       @media (max-width: 479px) {
         #homepage-slider .homeslider-description h3 {
