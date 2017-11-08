@@ -12,8 +12,17 @@ body {
   text-align: center;
 }
 
+#header_logo {
+  background-color: white;
+  
+}
+
 #header_logo img {
-  padding: 15px 0;
+  padding: 2px;
+  margin: 0 20px 0 0;
+  background-color: white;
+  height: 50px;
+  float: left;
 }
 
 #main-content {
