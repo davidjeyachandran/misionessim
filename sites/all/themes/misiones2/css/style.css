@@ -505,6 +505,7 @@ nav#main-nav-container #block-mainnavigation {
     float: none;
     position: relative;
     border-right: none;
+    background-color: black;
   }
 }
 
