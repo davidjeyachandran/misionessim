@@ -28,14 +28,3 @@ jQuery(document).ready(function(){
   });
 
 });
-
-jQuery(window).scroll(function() {
-	jQuery('.views-field-field-image img').each(function(){
-	var imagePos = jQuery(this).offset().top; 
-	var topOfWindow = jQuery(window).scrollTop();
-		if (topOfWindow > 70) {
-      jQuery(this).removeClass("hide");
-			jQuery(this).addClass("animated fadeInUp ");
-		}
-	});
-});
