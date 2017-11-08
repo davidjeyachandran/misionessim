@@ -30,10 +30,11 @@ jQuery(document).ready(function(){
 });
 
 jQuery(window).scroll(function() {
-	jQuery('#block-views-block-view-1-block-1 .views-view-grid > .row > .col-sm-4').each(function(){
+	jQuery('.views-field-field-image img').each(function(){
 	var imagePos = jQuery(this).offset().top; 
 	var topOfWindow = jQuery(window).scrollTop();
-		if (imagePos < topOfWindow+650) {
+		if (topOfWindow > 70) {
+      jQuery(this).removeClass("hide");
 			jQuery(this).addClass("animated fadeInUp ");
 		}
 	});
