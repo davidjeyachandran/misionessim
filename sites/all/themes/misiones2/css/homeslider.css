@@ -48,7 +48,7 @@
       margin: 0;
       padding: 0;
       position: relative;
-    text-align:left;
+      text-align:left;
     }
       @media (max-width: 1199px) {
         #homepage-slider .homeslider-description h3 {
@@ -81,7 +81,7 @@
 #homepage-slider .homeslider-description {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 20px;
    }
   @media (min-width: 1200px) {
     #homepage-slider .homeslider-description .container {
