@@ -18,14 +18,14 @@ body {
 }
 
 #header_logo img {
-  padding: 2px;
   margin: 0 20px 0 0;
   background-color: white;
-  height: 50px;
+  height: 47px;
   float: left;
 }
 
 #main-content {
+  min-height: 310px;
   padding-top: 10px;
 }
 
