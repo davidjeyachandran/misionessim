@@ -131,7 +131,7 @@
   width: 100%; }
 #homepage-slider .bx-wrapper .bx-pager {
   position: absolute;
-  bottom:120px;
+  bottom:5px;
   border-top:100px;
   width: 100%;
   z-index: 999;
