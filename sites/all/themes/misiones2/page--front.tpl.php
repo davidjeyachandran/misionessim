@@ -173,7 +173,9 @@
       <div class="col-md-3"></div>
       <div class="col-md-6" style="text-align:center;">
         <h2>Qué es SIM?</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YIIw-r8ZYAY" frameborder="0" allowfullscreen></iframe>
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YIIw-r8ZYAY" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
       <div class="col-md-3"></div>
     </div>
