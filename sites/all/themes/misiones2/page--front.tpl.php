@@ -147,19 +147,19 @@
 <div class="container" id="main-content">
   <div class="row">
     <div class="col col-md-4">
-      <h3 class="title_block"><a href="<?php print $path ?>/images/servir.jpg" hreflang="en">Sirve Con Nosotros</a></h3>
+      <h3 class="title_block"><a href="sirve-con-nosotros" hreflang="en">Sirve Con Nosotros</a></h3>
       <div class="views-field views-field-field-image center">
         <a href="sirve-con-nosotros"><img src="<?php print $path ?>/images/servir.jpg" width="370" height="267" alt="4" typeof="foaf:Image" /></a>
       </div>
     </div>
     <div class="col col-md-4">
-      <h3 class="title_block"><a href="<?php print $path ?>/images/orar.jpg" hreflang="en">Ora con nosotros</a></h3>
+      <h3 class="title_block"><a href="ora-con-nosotros" hreflang="en">Ora con nosotros</a></h3>
       <div class="views-field views-field-field-image center">
         <a href="ora-con-nosotros"><img src="<?php print $path ?>/images/orar.jpg" width="370" height="267" alt="2" typeof="foaf:Image" /></a>
       </div>
     </div>
     <div class="col col-md-4">
-      <h3 class="title_block"><a href="<?php print $path ?>/images/dar.jpg" hreflang="en">Da a la obra</a></h3>
+      <h3 class="title_block"><a href="da-la-obra" hreflang="en">Da a la obra</a></h3>
       <div class="views-field views-field-field-image center">
         <a href="da-la-obra"><img src="<?php print $path ?>/images/dar.jpg" width="370" height="267" alt="1" typeof="foaf:Image" /></a>
       </div>
