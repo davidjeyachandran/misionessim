@@ -80,7 +80,7 @@ q:before, q:after, blockquote:before, blockquote:after {
 input, textarea{
   /*border: 1px solid #e3e3e3;
   background: none;*/
-  border:1px solid #fff !important;
+  border: 1px solid #e3e3e3 !important;
   padding: 10px;
 }
 
