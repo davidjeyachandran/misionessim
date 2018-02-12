@@ -135,6 +135,21 @@
                   </div>
                 </div>
               </li>
+
+
+              <li class="homeslider-container">
+                <a href="#">
+                  <img src="<?php print $path ?>/images/slider4.jpg"/></a>
+                <div class="homeslider-description">
+                  <div class="container">
+                    <div>
+                      <h2>Revista VAMOS</h2>
+                      <h3></h3>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
             </ul></div>
         </div>
       </div>
