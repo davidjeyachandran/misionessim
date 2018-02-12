@@ -164,13 +164,13 @@
     <div class="col col-md-4">
       <h3 class="title_block"><a href="sirve-con-nosotros" hreflang="en">Sirve Con Nosotros</a></h3>
       <div class="views-field views-field-field-image center">
-        <a href="sirve-con-nosotros"><img src="<?php print $path ?>/images/servir.jpg" width="370" height="267" alt="4" typeof="foaf:Image" /></a>
+        <a href="sirve-con-nosotros"><img src="<?php print $path ?>/images/comeserve.jpg" width="370" height="267" alt="4" typeof="foaf:Image" /></a>
       </div>
     </div>
     <div class="col col-md-4">
       <h3 class="title_block"><a href="ora-con-nosotros" hreflang="en">Ora con nosotros</a></h3>
       <div class="views-field views-field-field-image center">
-        <a href="ora-con-nosotros"><img src="<?php print $path ?>/images/orar.jpg" width="370" height="267" alt="2" typeof="foaf:Image" /></a>
+        <a href="ora-con-nosotros"><img src="<?php print $path ?>/images/pray.jpg" width="370" height="267" alt="2" typeof="foaf:Image" /></a>
       </div>
     </div>
     <div class="col col-md-4">
