@@ -143,7 +143,6 @@
                 <div class="homeslider-description">
                   <div class="container">
                     <div>
-                      <h2>Revista VAMOS</h2>
                       <h3></h3>
                     </div>
                   </div>
