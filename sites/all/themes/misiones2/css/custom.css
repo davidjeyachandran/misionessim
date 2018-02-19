@@ -514,6 +514,146 @@ text-align: center;
 text-transform: uppercase;
 }
 
+/* ------ Revista Vamos page ------ */
+ .edicion:hover img, .cover:hover img{
+     opacity: 0.3;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+     -webkit-transform: scale(1.3, 1.3);
+     -moz-transform: scale(1.3, 1.3);
+     -ms-transform: scale(1.3, 1.3);
+     -o-transform: scale(1.3, 1.3);
+     transform: scale(1.3, 1.3);
+     max-width: 100%;
+     height: auto;
+     -webkit-transition: all .8s ease;
+     -moz-transition: all .8s ease;
+     -o-transition: all .8s ease;
+     transition: all .8s ease;
+}
+ .edicion img, .cover img{
+     -webkit-transition: all .8s ease;
+     -moz-transition: all .8s ease;
+     -o-transition: all .8s ease;
+     transition: all .8s ease;
+}
+ .views-field-field-cover-image .field-content a:nth-child(2){
+     display: block;
+     position: relative;
+     -webkit-transition: all .8s ease;
+     -moz-transition: all .8s ease;
+     -o-transition: all .8s ease;
+     transition: all .8s ease;
+}
+ .views-field-field-cover-image .field-content a:nth-child(2):after, .cover a:after{
+     content: "\f002";
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     top: 10%;
+     position: absolute;
+     z-index: 5;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+     width: 100%;
+     text-align: center;
+     font-size: 60px;
+     line-height: 1em;
+     color: #fff;
+     font-family: "FontAwesome";
+     margin: 0;
+     left: 0;
+     bottom: 0;
+}
+ .edicion:hover .views-field-field-cover-image .field-content a:nth-child(2):after, .cover:hover a:after{
+     content: "\f002";
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     top: 40%;
+}
+ .cover a{
+     display: block;
+     overflow: hidden;
+     text-align: center;
+     background:#fff;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .cover:hover a{
+     background: #000;
+}
+ .cover:hover h2 a{
+     background: #fff;
+}
+ .edicion:hover .views-field-field-cover-image{
+     display: block;
+     background: #000;
+}
+ .edicion .views-field-field-cover-image{
+     position: relative;
+     overflow: hidden;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .edicion h2{
+     position: relative;
+}
+ .edicion:hover h2 a, .edicion:hover span{
+     color: #fff !important;
+}
+ .edicion h2 a{
+     margin-top: 3px;
+     padding-bottom: 7px;
+     padding-top: 7px;
+     display: block;
+}
+ .edicion span{
+     padding-bottom: 7px;
+     display: block;
+}
+ .edicion:hover h2:before{
+     height: 100px;
+}
+ .views-field-title h2:before{
+     content: "";
+     background: #BD2A26;
+     position: absolute;
+     top: -3px;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     z-index: -1;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .edicion{
+     margin-bottom: 30px;
+     -webkit-box-flex: 1;
+     -moz-box-flex: 1;
+     -ms-box-flex: 1 0 auto;
+     flex: 1 0 auto;
+}
+ .view-id-vamos .view-content{
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+    /* height: auto;
+     */
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+}
+ @media (min-width: 1200px){
+     #content {
+         width: 970px !important;
+    }
+}
+
 .view-id-recursos .views-exposed-form .views-exposed-widget .form-submit {
 margin-top: 2.6em;
 }
