@@ -138,7 +138,7 @@
 
 
               <li class="homeslider-container">
-                <a href="#">
+                <a href="la-revista">
                   <img src="<?php print $path ?>/images/slider4.jpg"/></a>
                 <div class="homeslider-description">
                   <div class="container">
