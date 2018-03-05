@@ -25,7 +25,7 @@ body {
 
 #main-content {
   min-height: 310px;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 #main-content h3 {
@@ -669,7 +669,6 @@ left: 38px;
     padding: 0;
 }
 
->>>>>>> revista-vamos-page
 #main-content .views-field-field-image a{
     display: block;
     overflow: hidden;
