@@ -789,7 +789,7 @@ content: "";
 }
 
 /* ------ curso vamos ------ */
-#block-system-main .view-cursovamos span a,.view-id-quienessomos span a{
+.view-cursovamos span a,.view-id-quienessomos span a{
     width: 260px;
     text-decoration: none;
     padding: .5rem 1rem;
@@ -801,13 +801,15 @@ content: "";
     overflow: hidden;
     transition: all .3s ease;
 }
-#block-system-main .view-cursovamos span a:hover,.view-id-quienessomos span a:hover {
+
+.view-cursovamos span a:hover,.view-id-quienessomos span a:hover {
     padding-right: 50px;
     width: 300px;
     color:#BD2A26;
 
 }
-#block-system-main .view-cursovamos span a:after,.view-id-quienessomos span a:after {
+
+.view-cursovamos span a:after,.view-id-quienessomos span a:after {
     transition: all .3s ease;
     content: '';
     width: 100%;
@@ -817,14 +819,16 @@ content: "";
     top: 0;
     left: -100%;
 }
-#block-system-main .view-cursovamos span a:hover .fa, .view-id-quienessomos span a:hover .fa {
+
+.view-cursovamos span a:hover .fa, .view-id-quienessomos span a:hover .fa {
     transition: all .3s ease;
     right: 1rem;
 }
-#block-system-main .view-cursovamos span a:hover:after ,.view-id-quienessomos span a:hover:after{
+.view-cursovamos span a:hover:after ,.view-id-quienessomos span a:hover:after{
   left: 0;
 }
-#block-system-main .fa {
+
+.view-cursovamos .fa {
     margin-left: 2rem;
     position: absolute;
     right: 1rem;
@@ -839,40 +843,7 @@ content: "";
 .view-recursos{
   margin:10px 0;
 }
-.btn-custom{
-  background:#BD2A26;
-  border:1px solid #BD2A26;
-  border-radius: 10px;
-  padding:5px 20px !important;
-  font-weight: bold;
-  font-size:16px;
-  /*filter:opacity(.8);*/
-  height: 33px;
-  display: table-cell;
-}
 
-.btn-custom .file{
-  display: table-cell;
-  width:330px;
-  color:#fff !important;
-  line-height: 1.2;
-}
-.btn-custom .file a{
-  display: table-cell;
-  font-size: 0.6em;
-  color: #dedede;
-  margin: 0 15px;
-}
-.btn-custom .file-icon{
-    vertical-align: middle;
-    display: table-cell;
-    font-size: 20px;
-    border-left: 1px solid #e46969;
-    padding-left:15px;
-    float:right;
-    position: relative;
-    bottom: 9px;
-}
 
 .view-id-vamos {
   clear: both;
@@ -907,4 +878,75 @@ content: "";
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+.btn-custom{
+  background:#BD2A26;
+  border:1px solid #BD2A26;
+  border-radius: 10px;
+  padding:5px 20px !important;
+  color: white;
+  font-weight: bold;
+  font-size:16px;
+  filter:opacity(.8);
+  height: 33px;
+  line-height: 1em;
+  display: table-cell;
+}
+
+.btn-custom:hover {
+  filter:opacity(1);
+  color: white;
+}
+
+.btn-custom .file{
+  display: table-cell;
+  width:330px;
+  color:#fff !important;
+  line-height: 1.2;
+}
+.btn-custom .file a{
+  display: table-cell;
+  font-size: 0.6em;
+  color: #dedede;
+  margin: 0 15px;
+}
+.btn-custom .file-icon{
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 20px;
+    border-left: 1px solid #e46969;
+    padding-left:15px;
+    float:right;
+    position: relative;
+    bottom: 9px;
+}
+
+.btn-custom .fa{
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 20px;
+    border-left: 1px solid #e46969;
+    padding-left:15px;
+}
+
+.btn-custom .texto-descarga {
+  display: table-cell;
+  width: 140px;
+  padding-top: 4px;
+}
+
+.btn-custom .texto-descarga span {
+    display: table-cell;
+}
+
+.btn-custom .display-filename {
+    font-size: 0.5em;
+    color: #dedede;
+    margin: 0 15px;
+}
+
+.field-name-field-magazinepdf {
+  display: none;
 }

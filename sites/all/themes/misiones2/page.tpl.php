@@ -109,6 +109,9 @@
       <?php print render($action_links); ?>
     </ul>
   <?php endif; ?>
+
+  <?php print $messages; ?>
+
   <?php print render($page['content']); ?>
   <?php print $feed_icons; ?>
 
