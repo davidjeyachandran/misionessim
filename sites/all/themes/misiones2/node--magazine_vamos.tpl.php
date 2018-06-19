@@ -83,7 +83,7 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
 <div style="padding:30px 0;">
-<a class="btn-custom" href="<?php print $content['field_magazinepdf'][0]['#markup']; ?>">
+<a class="btn-custom" target="_blank" href="<?php print $content['field_magazinepdf'][0]['#markup']; ?>">
   <div class="texto-descarga">Descarga<span class="display-filename"><?php print $title; ?></span></div>
   <i class="fa fa-download" aria-hidden="true"></i>
 </a>
