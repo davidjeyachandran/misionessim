@@ -50,32 +50,36 @@
 
 </script>
 
-<script src="faster-combined.js"></script>
+<script src="https://fasterweb.io/faster.js"></script>
 
 <script>
   const websiteConfig = {
     "urlInclude": [],
-    "urlExclude" : ["/admin/*"],
-    "elementSelector": "#content",
+    "urlExclude" : ["/admin/*", "*.*"],
+    "elementSelector": null,
     "url": {
       "/": {
-        "prefetch" : ["/quienessomos.html","/recursos-movilicemos.html"],
-        "loadFunction": function(){console.log('index')}
+        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista", "/contact"],
+        "loadFunction": function(){}
       },
-      "/index.html": {
-        "prefetch" : ["/quienessomos.html","/recursos-movilicemos.html"],
-        "loadFunction": function(){console.log('index')}
+      "/quienessomos": {
+        "prefetch" : ["/", "/recursos-movilicemos"],
+        "loadFunction": function(){}
       },
-      "/quienessomos.html": {
-        "prefetch" : ["/index.html", "/recursos-movilicemos.html"],
-        "loadFunction": function(){console.log('quienessomos')}
+      "/recursos-movilicemos": {
+        "prefetch" : ["/", "/quienessomos", "/la-revista"],
+        "loadFunction": function(){}
       },
-      "/recursos-movilicemos.html": {
-        "prefetch" : ["/index.html", "/quienessomos.html", "/la-revista.html"],
-        "loadFunction": function(){console.log('quienessomos')}
+      "/la-revista": {
+        "prefetch" : ["/", "/cursovamos"],
+        "loadFunction": function(){}
+      },
+      "/cursovamos": {
+        "prefetch" : ["/", "/recursos-movilicemos", "/contact"],
+        "loadFunction": function(){}
       },
       "all": {
-        "prefetch" : ["index.html"],
+        "prefetch" : ["/"],
         "loadFunction": function(urlTarget, jQuery, ga){
           ga('set', 'dimension1','faster');
           ga('send', 'pageview', urlTarget, {location: window.location.href});
