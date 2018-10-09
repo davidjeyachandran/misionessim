@@ -55,7 +55,7 @@
 <script>
   const websiteConfig = {
     "urlInclude": [],
-    "urlExclude" : ["/admin/*", "*.*"],
+    "urlExclude" : ["/admin/*", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx"],
     "elementSelector": null,
     "url": {
       "/": {
