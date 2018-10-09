@@ -45,7 +45,47 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-12299775-6', 'misionessim.org');
+  ga('create', 'UA-12299775-6', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<script src="faster-combined.js"></script>
+
+<script>
+  const websiteConfig = {
+    "urlInclude": [],
+    "urlExclude" : ["/admin/*"],
+    "elementSelector": "#content",
+    "url": {
+      "/": {
+        "prefetch" : ["/quienessomos.html","/recursos-movilicemos.html"],
+        "loadFunction": function(){console.log('index')}
+      },
+      "/index.html": {
+        "prefetch" : ["/quienessomos.html","/recursos-movilicemos.html"],
+        "loadFunction": function(){console.log('index')}
+      },
+      "/quienessomos.html": {
+        "prefetch" : ["/index.html", "/recursos-movilicemos.html"],
+        "loadFunction": function(){console.log('quienessomos')}
+      },
+      "/recursos-movilicemos.html": {
+        "prefetch" : ["/index.html", "/quienessomos.html", "/la-revista.html"],
+        "loadFunction": function(){console.log('quienessomos')}
+      },
+      "all": {
+        "prefetch" : ["index.html"],
+        "loadFunction": function(urlTarget, jQuery, ga){
+          ga('set', 'dimension1','faster');
+          ga('send', 'pageview', urlTarget, {location: window.location.href});
+          console.log('All url callback: ' + window.location.pathname);
+        }
+      }
+    }
+  }
+
+  window.onload = function(){
+    window.faster(websiteConfig, jQuery, ga);
+  }
 </script>
