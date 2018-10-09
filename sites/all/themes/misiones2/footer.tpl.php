@@ -51,6 +51,7 @@
 </script>
 
 <script src="https://fasterweb.io/faster.js"></script>
+<link type="text/css" rel="stylesheet" href="https://fasterweb.io/faster.css" />
 
 <script>
   const websiteConfig = {
@@ -59,7 +60,7 @@
     "elementSelector": null,
     "url": {
       "/": {
-        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista", "/contact"],
+        "prefetch" : ["/quienessomos","/recursos", "/la-revista"],
         "loadFunction": function(){}
       },
       "/quienessomos": {
@@ -75,7 +76,7 @@
         "loadFunction": function(){}
       },
       "/cursovamos": {
-        "prefetch" : ["/", "/recursos-movilicemos", "/contact"],
+        "prefetch" : ["/", "/recursos"],
         "loadFunction": function(){}
       },
       "all": {
