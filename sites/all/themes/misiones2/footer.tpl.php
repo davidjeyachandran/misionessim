@@ -54,7 +54,7 @@
 <link type="text/css" rel="stylesheet" href="https://fasterweb.io/faster.css" />
 
 <script>
-function slider(jQuery) {
+function homeSlider(jQuery) {
 
   if (typeof(homeslider_speed) == 'undefined')
     homeslider_speed = 500;
@@ -105,8 +105,8 @@ function slider(jQuery) {
     "url": {
       "/": {
         "prefetch" : ["/quienessomos","/recursos", "/la-revista"],
-        "pageFunction": function(jQuery){
-          slider(jQuery)
+        "pageFunction": function(urlTarget, jQuery, ga){
+          homeSlider(jQuery);
         }
       },
       "/quienessomos": {
