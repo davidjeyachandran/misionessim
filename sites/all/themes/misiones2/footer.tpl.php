@@ -46,11 +46,11 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-12299775-6', 'auto');
-  ga('send', 'pageview');
 
 </script>
 
 <script async src="https://fasterweb.io/faster.js"></script>
+<script async type="text/javascript" src="https://fasterweb.io/js/ab.js"></script>
 <link type="text/css" rel="stylesheet" href="https://fasterweb.io/faster.css" />
 
 <script>
@@ -137,7 +137,24 @@ window.addEventListener('load', function () {
     }
   }
 
-  window.faster(websiteConfig, jQuery, ga);
+  //AB Test - Faster and Control
+  var myAbTest = ABTest({
+    name: "Test_Faster",
+    customVarSlot: 1,
+    variations: {
+        faster: function () {
+          console.log('AB: Faster');
+          ga('set', 'dimension1','faster');
+          ga('send', 'pageview');
+          window.faster(websiteConfig, jQuery, ga);
+        },
+        control: function () {
+          console.log('AB: Control');
+          ga('set', 'dimension1','control');
+          ga('send', 'pageview')
+        }
+    }
+  });
 
 });
 
