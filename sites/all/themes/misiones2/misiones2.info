@@ -22,7 +22,6 @@ stylesheets[all][] = css/homeslider.css
 stylesheets[all][] = css/font-awesome.min.css
 
 scripts[] = js/vendor/ready.min.js
-scripts[] = js/vendor/TimelineMax.js
 scripts[] = js/vendor/TweenMax.min.js
 scripts[] = js/vendor/jquery.once.min.js
 scripts[] = js/vendor/jquery.cookie.min.js
