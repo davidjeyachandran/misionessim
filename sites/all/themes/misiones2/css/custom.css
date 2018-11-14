@@ -950,3 +950,16 @@ content: "";
 .field-name-field-magazinepdf {
   display: none;
 }
+
+/*********************************************
+Lazy loading image effect
+**********************************************/
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}

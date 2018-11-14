@@ -112,7 +112,7 @@
               
               <li class="homeslider-container">
                 <a href="#">
-                  <img src="<?php print $path ?>/images/slider2.jpg"/></a>
+                  <img data-src="<?php print $path ?>/images/slider2.jpg"/></a>
                 <div class="homeslider-description">
                   <div class="container">
                     <div>
@@ -125,7 +125,7 @@
               
               <li class="homeslider-container">
                 <a href="#">
-                  <img src="<?php print $path ?>/images/slider3.jpg"/></a>
+                  <img data-src="<?php print $path ?>/images/slider3.jpg"/></a>
                 <div class="homeslider-description">
                   <div class="container">
                     <div>
@@ -139,7 +139,7 @@
 
               <li class="homeslider-container">
                 <a href="la-revista">
-                  <img src="<?php print $path ?>/images/slider4.jpg"/></a>
+                  <img data-src="<?php print $path ?>/images/slider4.jpg"/></a>
                 <div class="homeslider-description">
                   <div class="container">
                     <div>
@@ -162,20 +162,20 @@
   <div class="row">
     <div class="col col-md-4">
       <h3 class="title_block"><a href="sirve-con-nosotros" hreflang="en">Sirve Con Nosotros</a></h3>
-      <div class="views-field views-field-field-image center">
-        <a href="sirve-con-nosotros"><img src="<?php print $path ?>/images/comeserve.jpg" width="370" height="267" alt="4" typeof="foaf:Image" /></a>
+      <div class="center">
+        <a href="sirve-con-nosotros"><img data-src="<?php print $path ?>/images/comeserve.jpg" width="370" height="267" alt="4" typeof="foaf:Image" /></a>
       </div>
     </div>
     <div class="col col-md-4">
       <h3 class="title_block"><a href="ora-con-nosotros" hreflang="en">Ora con nosotros</a></h3>
-      <div class="views-field views-field-field-image center">
-        <a href="ora-con-nosotros"><img src="<?php print $path ?>/images/pray.jpg" width="370" height="267" alt="2" typeof="foaf:Image" /></a>
+      <div class="center">
+        <a href="ora-con-nosotros"><img data-src="<?php print $path ?>/images/pray.jpg" width="370" height="267" alt="2" typeof="foaf:Image" /></a>
       </div>
     </div>
     <div class="col col-md-4">
       <h3 class="title_block"><a href="da-la-obra" hreflang="en">Da a la obra</a></h3>
-      <div class="views-field views-field-field-image center">
-        <a href="da-la-obra"><img src="<?php print $path ?>/images/dar.jpg" width="370" height="267" alt="1" typeof="foaf:Image" /></a>
+      <div class="center">
+        <a href="da-la-obra"><img data-src="<?php print $path ?>/images/dar.jpg" width="370" height="267" alt="1" typeof="foaf:Image" /></a>
       </div>
     </div>
   </div>
@@ -187,7 +187,8 @@
       <div class="col-md-6 col-md-offset-3">
         <h2>Qué es SIM?</h2>
         <div class="videoWrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/YIIw-r8ZYAY" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315"
+            data-src="https://www.youtube.com/embed/YIIw-r8ZYAY" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
