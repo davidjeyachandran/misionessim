@@ -954,9 +954,6 @@ content: "";
 /*********************************************
 Lazy loading image effect
 **********************************************/
-#homepage-slider {
-  height: 546px;
-}
 
 img {
   opacity: 1;

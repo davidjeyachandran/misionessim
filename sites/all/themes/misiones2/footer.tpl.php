@@ -41,13 +41,20 @@
 
 <script>
 window.onload = function() {
-  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
-    img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = function() {
-      img.removeAttribute('data-src');
-    };
-  });
+
+  function replaceSrc(img) {
+      img.setAttribute('src', img.getAttribute('data-src'));
+      img.onload = function() {
+        img.removeAttribute('data-src');
+      };
+  }
+
+  [].forEach.call(document.querySelectorAll('img[data-src]'), replaceSrc);
+  [].forEach.call(document.querySelectorAll('iframe[data-src]'), replaceSrc);
+
 };
+
+
 
 
 </script>
