@@ -196,3 +196,7 @@
 </div>
 
 <?php include 'footer.tpl.php'; ?>
+<script type="text/javascript">
+  homeSlider(jQuery);
+  lazyLoad();
+</script>
