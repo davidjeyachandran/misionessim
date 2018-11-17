@@ -199,8 +199,8 @@
 
 <?php include 'footer.tpl.php'; ?>
 <script type="text/javascript">
+homeSlider(jQuery);
 window.addEventListener('load', function () {
-  homeSlider(jQuery);
   lazyLoad();
 })
 </script>
