@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+/**************************************
+Custom Structure
+**************************************/
+
+body {
+  font-family: sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+#header_logo {
+  background-color: white;
+}
+
+#header_logo img {
+  margin: 0 20px 0 0;
+  background-color: white;
+  height: 47px;
+  float: left;
+}
+
+#main-content {
+  min-height: 310px;
+  padding-top: 40px;
+}
+
+#main-content h3 {
+  text-align: center;
+}
+
+.featured h2 {
+  text-align: center;
+}
+
+.featured {
+  background-color: #efefef;
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.navbar {
+  min-height: 40px;
+  height: 52px;
+}
+
+#header-bottom {
+  background-color: black;
+}
+
+.views-field-field-image {
+  padding-top: 10px;
+}
+/* footer */
+
+
+footer .bottom-footer{
+  padding: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+
+
+  footer .footer-top h4.active:after {
+    content: "\f056";
+  }
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+}
+
+
+/* block customtabs */
+
+/* block social */
+#social_block {
+  clear: left;
+  float: none;
+  margin: 0;
+}
+
+#social_block ul {
+    text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+    @media (max-width: 767px) {
+      #social_block ul {
+        float: none; } }
+
+    #social_block ul li.youtube a {
+      background: #d44934; }
+    #social_block ul li {
+      display: inline-block;
+      text-align: center;
+      padding: 0 11px; }
+      #social_block ul li a {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        background: #405a9a;
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        position: relative; }
+
+#social_block ul li a:before {
+  display: inline-block;
+  font-family: "FontAwesome"; }
+#social_block ul li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
+  @media (max-width: 767px) {
+}
+
+
+/* Code for the Magazine Vamos display all page */
+.views-field-field-cover-image .field-content img {
+    height: 283px;
+    width: 200px;
+}
+
+
+.nueva {
+    position: relative;
+    padding-bottom: 170px;
+    /*right: -10px;*/
+    z-index: 2;
+/*transition-duration*/
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+.edicion {
+  text-align: center;
+  margin: 15px 0;
+}
+
+
+.edicion img{
+  width: 370px;
+}
+
+
+.edicion h2 {
+  margin: 0;
+  text-align: center;
+  color: #333333;
+  font-size: 19px;
+}
+
+
+
+.edic_ante
+{
+text-align: center;
+text-transform: uppercase;
+}
+/* ------ Revista Vamos page ------ */
+
+ .edicion img, .cover img{
+     -webkit-transition: all .8s ease;
+     -moz-transition: all .8s ease;
+     -o-transition: all .8s ease;
+     transition: all .8s ease;
+}
+ .views-field-field-cover-image .field-content a:nth-child(2){
+     display: block;
+     position: relative;
+     -webkit-transition: all .8s ease;
+     -moz-transition: all .8s ease;
+     -o-transition: all .8s ease;
+     transition: all .8s ease;
+}
+ .views-field-field-cover-image .field-content a:nth-child(2):after, .cover a:after{
+     content: "\f002";
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     top: 10%;
+     position: absolute;
+     z-index: 5;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+     width: 100%;
+     text-align: center;
+     font-size: 60px;
+     line-height: 1em;
+     color: #fff;
+     font-family: "FontAwesome";
+     margin: 0;
+     left: 0;
+     bottom: 0;
+}
+
+ .cover a{
+     display: block;
+     overflow: hidden;
+     text-align: center;
+     background:#fff;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+
+ .edicion .views-field-field-cover-image{
+     position: relative;
+     overflow: hidden;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .edicion h2{
+     position: relative;
+}
+
+ .edicion h2 a{
+     margin-top: 3px;
+     padding-bottom: 7px;
+     padding-top: 7px;
+     display: block;
+}
+ .edicion span{
+     padding-bottom: 7px;
+     display: block;
+}
+
+ .views-field-title h2:before{
+     content: "";
+     background: #BD2A26;
+     position: absolute;
+     top: -3px;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     z-index: -1;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .edicion{
+     margin-bottom: 30px;
+     -webkit-box-flex: 1;
+     -moz-box-flex: 1;
+     -ms-box-flex: 1 0 auto;
+     flex: 1 0 auto;
+}
+ .view-id-vamos .view-content{
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+    /* height: auto;
+     */
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+}
+ @media (min-width: 1200px){
+     #content {
+         width: 970px !important;
+    }
+}
+
+.view-id-recursos .views-exposed-form .views-exposed-widget .form-submit {
+margin-top: 2.6em;
+}
+/* Home page icon for revista vamos */
+
+
+#main-content .views-field-field-image{
+    padding: 0;
+}
+
+#main-content .views-field-field-image a{
+    display: block;
+    overflow: hidden;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+    position: relative;
+}
+
+
+#main-content .views-field-field-image a img{
+    display: block;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+
+
+#main-content .views-field-field-image a:after{
+  content: "\f002";
+opacity: 1;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+top: 10%;
+position: absolute;
+z-index: -1;
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+    
+    text-align: center;
+    font-size: 60px;
+    line-height: 1em;
+        color: #fff;
+    font-family: "FontAwesome";
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+
+#main-content .col-md-4 h3{
+    position: relative;
+    margin: 0;
+    margin-top: 3px;
+    line-height: 50px;
+}
+
+
+#main-content .col-md-4 h3:before{
+content: "";
+    background: #BD2A26;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    z-index: -1;
+    -webkit-transition: all .5s ease !important;
+    transition: all .5s ease !important;
+}
+/* ------ la revista ------ */
+
+
+/* ------ curso vamos ------ */
+.view-cursovamos span a,.view-id-quienessomos span a{
+    width: 260px;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    display: inline-block;
+    background: #fff37d;
+    color: #333;
+    margin: .05rem 0;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+
+.view-cursovamos span a:after,.view-id-quienessomos span a:after {
+    transition: all .3s ease;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:rgba(0,0,0,0.1);
+    top: 0;
+    left: -100%;
+}
+
+
+.view-cursovamos .fa {
+    margin-left: 2rem;
+    position: absolute;
+    right: 1rem;
+    font-size: 1.7rem;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+/* ------ recursos misioneros ------ */
+
+
+
+.view-id-vamos {
+  clear: both;
+  padding-top: 50px;
+}
+
+
+
+.btn-custom{
+  background:#BD2A26;
+  border:1px solid #BD2A26;
+  border-radius: 10px;
+  padding:5px 20px !important;
+  color: white;
+  font-weight: bold;
+  font-size:16px;
+  filter:opacity(.8);
+  height: 33px;
+  line-height: 1em;
+  display: table-cell;
+}
+
+
+.btn-custom .file{
+  display: table-cell;
+  width:330px;
+  color:#fff !important;
+  line-height: 1.2;
+}
+.btn-custom .file a{
+  display: table-cell;
+  font-size: 0.6em;
+  color: #dedede;
+  margin: 0 15px;
+}
+
+
+.btn-custom .fa{
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 20px;
+    border-left: 1px solid #e46969;
+    padding-left:15px;
+}
+
+.btn-custom .texto-descarga {
+  display: table-cell;
+  width: 140px;
+  padding-top: 4px;
+}
+
+.btn-custom .texto-descarga span {
+    display: table-cell;
+}
+
+.btn-custom .display-filename {
+    font-size: 0.5em;
+    color: #dedede;
+    margin: 0 15px;
+}
+
+.field-name-field-magazinepdf {
+  display: none;
+}
