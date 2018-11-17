@@ -14,7 +14,7 @@ stylesheets[all][] = core/themes/classy/css/form.css
 stylesheets[all][] = core/themes/classy/css/menu.css
 
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/custom-cut.css
+stylesheets[all][] = css/custom.css
 
 stylesheets[all][] = css/vendor/jquery.bxslider.css
 stylesheets[all][] = css/vendor/animate.css
