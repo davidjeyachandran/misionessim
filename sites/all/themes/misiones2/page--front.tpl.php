@@ -98,7 +98,10 @@
           <div class="bx-viewport">
             <ul id="homeslider"><li class="homeslider-container">
                 <a href="#">
-                  <img src="<?php print $path ?>/images/slider1.jpg"/></a>
+                  <img src="<?php print $path ?>/images/slider1-min.jpg"
+                    data-src="<?php print $path ?>/images/slider1.jpg"
+                    alt="Nadie debe vivir y morir sin haber escuchado">
+                </a>
                 <div class="homeslider-description">
                   <div class="container">
                     <div>
@@ -108,7 +111,7 @@
                   </div>
                 </div>
               </li>
-              
+
               <li class="homeslider-container">
                 <a href="#">
                   <img data-src="<?php print $path ?>/images/slider2.jpg"/></a>
