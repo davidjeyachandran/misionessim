@@ -90,7 +90,6 @@
 <?php include 'header.tpl.php'; ?>
 
 <div id="header-bottom" class="header-bottom-wrapper">
-
 <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="columns-container">
   <div class="row" id="slider_row">
     <div class="center_column col-xs-12" id="top_column">  
@@ -197,6 +196,8 @@
 
 <?php include 'footer.tpl.php'; ?>
 <script type="text/javascript">
+window.addEventListener('load', function () {
   homeSlider(jQuery);
   lazyLoad();
+})
 </script>
