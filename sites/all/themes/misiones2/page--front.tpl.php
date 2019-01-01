@@ -98,9 +98,7 @@
           <div class="bx-viewport">
             <ul id="homeslider"><li class="homeslider-container">
                 <a href="#">
-                  <img src="<?php print $path ?>/images/slider1-min.jpg"
-                    data-src="<?php print $path ?>/images/slider1.jpg"
-                    alt="Nadie debe vivir y morir sin haber escuchado">
+                  <img src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">
                 </a>
                 <div class="homeslider-description">
                   <div class="container">
@@ -115,7 +113,7 @@
               <li class="homeslider-container">
                 <a href="#">
                   <img data-src="<?php print $path ?>/images/slider2.jpg"/></a>
-                <div class="homeslider-description">
+                <div class="homeslider-description hidden">
                   <div class="container">
                     <div>
                       <h2>Facilitamos</h2>
@@ -128,7 +126,7 @@
               <li class="homeslider-container">
                 <a href="#">
                   <img data-src="<?php print $path ?>/images/slider3.jpg"/></a>
-                <div class="homeslider-description">
+                <div class="homeslider-description hidden">
                   <div class="container">
                     <div>
                       <h2>Hacemos</h2>
@@ -142,7 +140,7 @@
               <li class="homeslider-container">
                 <a href="la-revista">
                   <img data-src="<?php print $path ?>/images/slider4.jpg"/></a>
-                <div class="homeslider-description">
+                <div class="homeslider-description hidden">
                   <div class="container">
                     <div>
                       <h3></h3>
@@ -199,8 +197,9 @@
 
 <?php include 'footer.tpl.php'; ?>
 <script type="text/javascript">
-homeSlider(jQuery);
 window.addEventListener('load', function () {
+  jQuery('.homeslider-description').removeClass('hidden')
+  homeSlider(jQuery);
   lazyLoad();
 })
 </script>
