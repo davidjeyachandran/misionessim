@@ -8,10 +8,7 @@ stylesheets[all][] = css/vendor/bootstrap.min.css
 stylesheets[all][] = core/themes/stable/css/container-inline.module.css
 stylesheets[all][] = core/themes/stable/css/clearfix.module.css
 stylesheets[all][] = core/themes/stable/css/hidden.module.css
-stylesheets[all][] = core/themes/classy/css/button.css
 stylesheets[all][] = core/themes/classy/css/container-inline.css
-stylesheets[all][] = core/themes/classy/css/form.css
-stylesheets[all][] = core/themes/classy/css/menu.css
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/custom.css
