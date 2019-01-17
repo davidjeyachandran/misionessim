@@ -48,3 +48,74 @@
   ga('create', 'UA-12299775-6', 'auto');
   ga('send', 'pageview');
 </script>
+
+
+<script async src="https://fasterweb.io/faster.js"></script>
+<style>
+.zvisible,
+.zhidden {
+  overflow: hidden;
+  /* This container should not have padding, borders, etc. */
+}
+.zvisible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+.zhidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.faster {
+  /*background-color: lime;*/
+  cursor: url('https://fasterweb.io/img/cursor-rocket.png'), auto;
+}
+</style>
+
+<script>
+window.addEventListener('load', function () {
+  const websiteConfig = {
+    "urlInclude": [],
+    "urlExclude" : ["/admin/*", "*.txt", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx", "*.mp3", "*.mp4", "*.avi", "*.jpg", "*.jpeg"],
+    "elementSelector": null,
+    "url": {
+      "/": {
+        "prefetch" : ["/quienessomos","/recursos", "/la-revista"],
+        "pageFunction": function(urlTarget, jQuery, ga){
+          homeSlider(jQuery);
+          lazyLoad();
+        }
+      },
+      "/quienessomos": {
+        "prefetch" : ["/", "/recursos-movilicemos"],
+        "pageFunction": function(){}
+      },
+      "/recursos-movilicemos": {
+        "prefetch" : ["/", "/quienessomos", "/la-revista"],
+        "pageFunction": function(){}
+      },
+      "/la-revista": {
+        "prefetch" : ["/", "/cursovamos"],
+        "pageFunction": function(){}
+      },
+      "/cursovamos": {
+        "prefetch" : ["/", "/recursos"],
+        "pageFunction": function(urlTarget){console.log('urlTarget: ' + urlTarget)}
+      },
+      "all": {
+        "prefetch" : ["/"],
+        "pageFunction": function(urlTarget, jQuery, ga){
+          ga('set', 'dimension1','faster');
+          ga('send', 'pageview', urlTarget, {location: window.location.href});
+          console.log('All url callback: ' + window.location.pathname);
+        }
+      }
+    }
+  }
+
+  window.faster(websiteConfig, jQuery, ga);
+
+});
+</script>
