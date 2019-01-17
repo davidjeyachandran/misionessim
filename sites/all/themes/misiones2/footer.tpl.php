@@ -82,7 +82,7 @@ window.addEventListener('load', function () {
     "elementSelector": null,
     "url": {
       "/": {
-        "prefetch" : ["/quienessomos","/recursos", "/la-revista"],
+        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista"],
         "pageFunction": function(urlTarget, jQuery, ga){
           homeSlider(jQuery);
           lazyLoad();
@@ -101,7 +101,7 @@ window.addEventListener('load', function () {
         "pageFunction": function(){}
       },
       "/cursovamos": {
-        "prefetch" : ["/", "/recursos"],
+        "prefetch" : ["/", "/recursos-movilicemos"],
         "pageFunction": function(urlTarget){console.log('urlTarget: ' + urlTarget)}
       },
       "all": {
