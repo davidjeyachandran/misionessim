@@ -82,7 +82,7 @@ window.addEventListener('load', function () {
     "elementSelector": null,
     "url": {
       "/": {
-        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista"],
+        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista", "/contact"],
         "pageFunction": function(urlTarget, jQuery, ga){
           homeSlider(jQuery);
           lazyLoad();
