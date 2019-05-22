@@ -78,11 +78,11 @@
 window.addEventListener('load', function () {
   const websiteConfig = {
     "urlInclude": [],
-    "urlExclude" : ["/la-revista/*", "/admin/*", "*.txt", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx", "*.mp3", "*.mp4", "*.avi", "*.jpg", "*.jpeg"],
+    "urlExclude" : ["/contact", "/la-revista/*", "/admin/*", "*.txt", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx", "*.mp3", "*.mp4", "*.avi", "*.jpg", "*.jpeg"],
     "elementSelector": null,
     "url": {
       "/": {
-        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista", "/contact"],
+        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista"],
         "pageFunction": function(urlTarget, jQuery, ga){
           homeSlider(jQuery);
           lazyLoad();
