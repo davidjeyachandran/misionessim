@@ -81,7 +81,7 @@
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-<p style="padding-top:10px">Haz click para descargar</p>
+<p style="padding-top:10px; margin-bottom: 5px">Haz click para descargar</p>
 <div style="padding-bottom:30px">
 <a class="btn-custom" target="_blank" href="<?php print $content['field_magazinepdf'][0]['#markup']; ?>">
   <div class="texto-descarga">Descarga<span class="display-filename"><?php print $title; ?></span></div>
