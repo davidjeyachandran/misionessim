@@ -39,6 +39,8 @@
   </div>
 </footer>
 
+<?php if (!$logged_in) : ?>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,34 +53,12 @@
 
 
 <script async src="https://fasterweb.io/faster.js"></script>
-<style>
-.zvisible,
-.zhidden {
-  overflow: hidden;
-  /* This container should not have padding, borders, etc. */
-}
-.zvisible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 2s linear;
-}
-.zhidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 2s, opacity 2s linear;
-}
-
-.faster {
-  /*background-color: lime;*/
-  cursor: url('https://fasterweb.io/img/cursor-rocket.png'), auto;
-}
-</style>
 
 <script>
 window.addEventListener('load', function () {
   const websiteConfig = {
     "urlInclude": [],
-    "urlExclude" : ["/contact", "/la-revista/*", "/admin/*", "*.txt", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx", "*.mp3", "*.mp4", "*.avi", "*.jpg", "*.jpeg", "*.zip"],
+    "urlExclude" : ["*logout*","/admin_menu*", "/contact", "/la-revista/*", "*admin/*", "*.txt", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx", "*.mp3", "*.mp4", "*.avi", "*.jpg", "*.jpeg", "*.zip"],
     "elementSelector": null,
     "url": {
       "/": {
@@ -119,3 +99,5 @@ window.addEventListener('load', function () {
 
 });
 </script>
+
+<?php endif; ?>
