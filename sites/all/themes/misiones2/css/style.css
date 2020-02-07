@@ -641,16 +641,35 @@ p {
 }
 
 .node-type-magazine-vamos .views-row {
+  position: relative;
   margin: 0 10px;
   width: 210px;
   background: #fff;
   padding: 0px;
   margin-bottom: 30px;
   border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 10px 15px rgba(201, 3, 3, 0.1);
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 10px 15px rgba(201, 3, 3, 0.1); */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15) !important;
+  transition: all 300ms;
+  top: 0px;
+}
+
+.node-type-magazine-vamos .views-row:hover {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15) !important;
+  top: -4px;
 }
 
 .node-type-magazine-vamos .views-row img {
   object-fit: cover;
   height: 120px;
+}
+
+
+.node-type-magazine-vamos .view-blog-related h4 {
+  font-size:16px;
+  padding: 0 10px;
+}
+
+.view-blog-related .views-field-view-node a {
+  padding: 0 10px;
 }
