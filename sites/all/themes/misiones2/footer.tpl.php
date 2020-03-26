@@ -6,17 +6,17 @@
         <section id="social_block">
           <ul>
             <li class="facebook">
-              <a title="Facebook" href="https://www.facebook.com/SIMLatinoamerica/" target="_blank">
+              <a title="Facebook" href="https://www.facebook.com/SIMLatinoamerica/" rel="noreferrer" target="_blank">
                 <i class="fa fa-facebook-f fa-lg" aria-hidden="true"></i>
               </a>
             </li>
             <li class="instagram">
-              <a title="Instagram" href="https://www.instagram.com/simlatinoamerica" target="_blank">
+              <a title="Instagram" href="https://www.instagram.com/simlatinoamerica" rel="noreferrer" target="_blank">
                 <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
               </a>
             </li>
             <li class="youtube">
-              <a title="YouTube" href="https://www.youtube.com/user/VamosSIM" target="_blank">
+              <a title="YouTube" href="https://www.youtube.com/user/VamosSIM" rel="noreferrer" target="_blank">
                 <i class="fa fa-youtube fa-lg" aria-hidden="true"></i>
               </a>
             </li>
