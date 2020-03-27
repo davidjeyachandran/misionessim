@@ -103,7 +103,7 @@
 }
 
 .pray-h1 {
-  padding: 82px 0;
+  padding: 100px 0 120px;
   font-size: 8vw;
   font-weight: 550;
   color: white;
