@@ -104,7 +104,7 @@
 
 .pray-h1 {
   padding: 100px 0 120px;
-  font-size: 8vw;
+  font-size: 5vw;
   font-weight: 550;
   color: white;
 }
@@ -119,10 +119,10 @@
 <div id="header-bottom" class="header-bottom-wrapper">
 <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="columns-container">
 <div class="pray-cover">
-  <h1 class="pray-h1">#PRAYTOENDCOVID19</h1>
+  <h1 class="pray-h1">#ORACIONPARAELFINDELCOVID19</h1>
   <a href="http://bit.ly/OraciónMundialCOVID19SIM">
     <p class="box-buttonSpecial" style="clear: both; padding-bottom: 50px">
-      <input type="submit" value="Puntos de Oración" class="animated fadeInUp buttonSpecial">
+      <input type="submit" value="Descarga aquí los puntos de oración" class="animated fadeInUp buttonSpecial">
     </p>
   </a>
 </div>
