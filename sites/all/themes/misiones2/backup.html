@@ -1,0 +1,78 @@
+.pray-cover { height: 50%; background-color: #112042; text-align: center; }
+.pray-cover .box-buttonSpecial .buttonSpecial { background: #112042; } .pray-h1
+{ padding: 82px 0; font-size: 60px; color: white; }
+
+<script>
+  var vHeight = jQuery(window).height() - 152,
+    vWidth = jQuery(window).width(),
+    cover = jQuery(".pray-cover");
+  console.log(vHeight);
+
+  cover.css({ height: vHeight, width: vWidth });
+</script>
+
+<ul id="homeslider">
+  <li class="homeslider-container">
+    <a href="#">
+      <img
+        src="<?php print $path ?>/images/slider1.jpg"
+        alt="Nadie debe vivir y morir sin haber escuchado"
+      />
+    </a>
+    <div class="homeslider-description">
+      <div class="container">
+        <div>
+          <h2>Nadie</h2>
+          <h3>debe vivir y morir sin haber escuchado</h3>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="homeslider-container">
+    <a href="#">
+      <img
+        data-src="<?php print $path ?>/images/slider2.jpg"
+        alt="Facilitamos la participación en misiones"
+    /></a>
+    <div class="homeslider-description hidden">
+      <div class="container">
+        <div>
+          <h2>Facilitamos</h2>
+          <h3>la participación en misiones</h3>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="homeslider-container">
+    <a href="#">
+      <img
+        data-src="<?php print $path ?>/images/slider3.jpg"
+        alt="Hacemos discípulos que hacen discípulos"
+    /></a>
+    <div class="homeslider-description hidden">
+      <div class="container">
+        <div>
+          <h2>Hacemos</h2>
+          <h3>discípulos que hacen discípulos</h3>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="homeslider-container">
+    <a href="la-revista">
+      <img
+        data-src="<?php print $path ?>/images/slider4.jpg"
+        alt="Revista VAMOS"
+    /></a>
+    <div class="homeslider-description hidden">
+      <div class="container">
+        <div>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
