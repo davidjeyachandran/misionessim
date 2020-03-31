@@ -124,7 +124,7 @@
       <a href="http://bit.ly/OraciónMundialCOVID19SIM">
         <p style="color:#ddd">Descarga aquí los puntos de oración</p>
         <p class="box-buttonSpecial" style="clear: both; padding-bottom: 50px">
-          <input type="submit" value="Los puntos de oración" class="animated fadeInUp buttonSpecial">
+        <input style="font-size: 20px;" type="submit" value="Los puntos de oración" class="animated fadeInUp buttonSpecial">
         </p>
       </a>
     </div>
