@@ -122,8 +122,9 @@
     <div class="pray-cover">
       <h1 class="pray-h1">#ORACIONPARAELFINDELCOVID19</h1>
       <a href="http://bit.ly/OraciónMundialCOVID19SIM">
+        <p style="color:#ddd">Descarga aquí los puntos de oración</p>
         <p class="box-buttonSpecial" style="clear: both; padding-bottom: 50px">
-          <input type="submit" value="Descarga aquí los puntos de oración" class="animated fadeInUp buttonSpecial">
+          <input type="submit" value="Los puntos de oración" class="animated fadeInUp buttonSpecial">
         </p>
       </a>
     </div>
