@@ -85,13 +85,15 @@
  * @see html.tpl.php
  */
 ?>
-
+<?php $path =  base_path() . path_to_theme();?>
 <style>
 .pray-cover {
   display: flex;
   flex-direction: column;
   min-height: 79vh;
   text-align: center;
+  background: url(<?php print $path ?>/images/misionessim-banner.png) no-repeat left top;
+  background-size: cover;
 }
 
 .pray-cover .box-buttonSpecial .buttonSpecial {
@@ -113,7 +115,6 @@
 
 </style>
 
-<?php $path =  base_path() . path_to_theme();?>
 <?php include 'header.tpl.php'; ?>
 
 <div id="header-bottom" class="header-bottom-wrapper">
