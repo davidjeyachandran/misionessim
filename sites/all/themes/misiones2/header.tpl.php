@@ -13,7 +13,7 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     </button>
-    <div class="navbar-title"></div>
+    <div class="navbar-title">MisionesSIM</div>
     <div class="collapse navbar-collapse" id="main-navbar">
       <div class="region region-primary-menu">
         <div aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
