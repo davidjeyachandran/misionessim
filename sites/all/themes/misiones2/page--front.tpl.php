@@ -117,27 +117,29 @@
 <?php include 'header.tpl.php'; ?>
 
 <div id="header-bottom" class="header-bottom-wrapper">
-<div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="columns-container">
-<div class="pray-cover">
-  <h1 class="pray-h1">#ORACIONPARAELFINDELCOVID19</h1>
-  <a href="http://bit.ly/OraciónMundialCOVID19SIM">
-    <p class="box-buttonSpecial" style="clear: both; padding-bottom: 50px">
-      <input type="submit" value="Descarga aquí los puntos de oración" class="animated fadeInUp buttonSpecial">
-    </p>
-  </a>
-</div>
+  <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+    <div class="columns-container">
+    <div class="pray-cover">
+      <h1 class="pray-h1">#ORACIONPARAELFINDELCOVID19</h1>
+      <a href="http://bit.ly/OraciónMundialCOVID19SIM">
+        <p class="box-buttonSpecial" style="clear: both; padding-bottom: 50px">
+          <input type="submit" value="Descarga aquí los puntos de oración" class="animated fadeInUp buttonSpecial">
+        </p>
+      </a>
+    </div>
 
-  <div class="row" id="slider_row">
-    <div class="center_column col-xs-12" id="top_column">
-      <div id="homepage-slider">
-        <div class="bx-wrapper">
-          <div class="bx-viewport">
+      <div class="row" id="slider_row">
+        <div class="center_column col-xs-12" id="top_column">
+          <div id="homepage-slider">
+            <div class="bx-wrapper">
+              <div class="bx-viewport">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div></div>
 
 </div>
 
