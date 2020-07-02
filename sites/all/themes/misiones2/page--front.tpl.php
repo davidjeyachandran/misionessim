@@ -86,55 +86,70 @@
  */
 ?>
 <?php $path =  base_path() . path_to_theme();?>
-<style>
-.pray-cover {
-  display: flex;
-  flex-direction: column;
-  min-height: 79vh;
-  text-align: center;
-  background: url(<?php print $path ?>/images/misionessim-banner.png) no-repeat left top;
-  background-size: cover;
-}
-
-.pray-cover .box-buttonSpecial .buttonSpecial {
-    background: #112042;
-}
-
-.pray-cover .box-buttonSpecial .buttonSpecial:hover {
-    background: #eee;
-}
-
-.pray-h1 {
-  padding: 100px 0 120px;
-  font-size: 5vw;
-  font-weight: 550;
-  color: white;
-}
-
-
-
-</style>
-
 <?php include 'header.tpl.php'; ?>
-
-<div id="header-bottom" class="header-bottom-wrapper">
-  <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
-    <div class="columns-container">
-    <div class="pray-cover">
-      <h1 class="pray-h1">#ORACIONPARAELFINDELCOVID19</h1>
-      <a href="http://bit.ly/OraciónMundialCOVID19SIM">
-        <p style="color:#ddd">Descarga aquí los puntos de oración</p>
-        <p class="box-buttonSpecial" style="clear: both; padding-bottom: 50px">
-        <input style="font-size: 20px;" type="submit" value="Los puntos de oración" class="animated fadeInUp buttonSpecial">
-        </p>
-      </a>
-    </div>
 
       <div class="row" id="slider_row">
         <div class="center_column col-xs-12" id="top_column">
           <div id="homepage-slider">
             <div class="bx-wrapper">
               <div class="bx-viewport">
+
+              <ul id="homeslider"><li class="homeslider-container">
+                <a href="#">	
+                  <img src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
+                </a>	
+                <div class="homeslider-description">	
+                  <div class="container">	
+                    <div>	
+                      <h2>Nadie</h2>	
+                      <h3>debe vivir y morir sin haber escuchado</h3>	
+                    </div>	
+                  </div>	
+                </div>	
+              </li>	
+
+              <li class="homeslider-container">	
+                <a href="#">	
+                  <img data-src="<?php print $path ?>/images/slider2.jpg"/></a>	
+                <div class="homeslider-description hidden">	
+                  <div class="container">	
+                    <div>	
+                      <h2>Facilitamos</h2>	
+                      <h3>la participación en misiones</h3>	
+                    </div>	
+                  </div>	
+                </div>	
+              </li>	
+
+              <li class="homeslider-container">	
+                <a href="#">	
+                  <img data-src="<?php print $path ?>/images/slider3.jpg"/></a>	
+                <div class="homeslider-description hidden">	
+                  <div class="container">	
+                    <div>	
+                      <h2>Hacemos</h2>	
+                      <h3>discípulos que hacen discípulos</h3>	
+                    </div>	
+                  </div>	
+                </div>	
+              </li>	
+
+
+              <li class="homeslider-container">	
+                <a href="la-revista">	
+                  <img data-src="<?php print $path ?>/images/slider4.jpg"/></a>	
+                <div class="homeslider-description hidden">	
+                  <div class="container">	
+                    <div>	
+                      <h3></h3>	
+                    </div>	
+                  </div>	
+                </div>	
+              </li>	
+
+            </ul>
+            </div>
+
               </div>
             </div>
           </div>
