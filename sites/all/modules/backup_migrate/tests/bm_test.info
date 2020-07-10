@@ -1,0 +1,13 @@
+name = "Backup and Migrate Mock Module"
+description = "Mock module for testing the Backup and Migrate module."
+package = Other
+core = 7.x
+hidden = TRUE
+dependencies[] = simpletest
+dependencies[] = backup_migrate
+
+; Information added by Drupal.org packaging script on 2020-07-10
+version = "7.x-3.8"
+core = "7.x"
+project = "backup_migrate"
+datestamp = "1594412725"
