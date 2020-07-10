@@ -5,30 +5,26 @@
  * All of the location handling code needed for Backup and Migrate.
  */
 
-require_once dirname(__FILE__) . '/crud.inc';
+backup_migrate_include('crud');
 
 /**
  * Get the available location types.
  */
 function backup_migrate_get_location_subtypes() {
-  require_once dirname(__FILE__) . '/crud.inc';
-  require_once dirname(__FILE__) . '/destinations.inc';
-  require_once dirname(__FILE__) . '/sources.inc';
-
+  backup_migrate_include('crud', 'destinations', 'sources');
   return backup_migrate_crud_subtypes('destination') + backup_migrate_crud_subtypes('source');
 }
 
 /**
- * Implements hook_backup_migrate_locations().
+ * Implementation of hook_backup_migrate_locations().
  *
  * Get the built in backup locations and those in the db.
  */
 function backup_migrate_backup_migrate_locations() {
-  require_once dirname(__FILE__) . '/filters.inc';
-
   $out = array();
 
   // Allow the filter plugins to declare the default locations.
+  backup_migrate_include('filters');
   $out += backup_migrate_filters_invoke_all('locations');
 
   return $out;
@@ -38,9 +34,9 @@ function backup_migrate_backup_migrate_locations() {
  * Get all the available backup location.
  *
  * @param $op
- *   The operation which will be performed on the location. Hooks can use this
- *   to return only those locations appropriate for the given op.
- *   Options include:
+ *  The operation which will be performed on the location. Hooks can use this
+ *  to return only those locations appropriate for the given op.
+ *  Options include:
  *    'manual backup' - locations available for manual backup
  *    'scheduled backup' - locations available for schedules backup
  *    'list files' - locations whose backup files can be listed
@@ -80,6 +76,7 @@ function backup_migrate_get_location($id) {
   return empty($locations[$id]) ? NULL : $locations[$id];
 }
 
+
 /**
  * A base class for creating locations.
  */
@@ -106,9 +103,6 @@ class backup_migrate_location extends backup_migrate_item {
     t('Locations');
   }
 
-  /**
-   *
-   */
   public function ops() {
     return $this->supported_ops;
   }
@@ -131,44 +125,26 @@ class backup_migrate_location extends backup_migrate_item {
     }
   }
 
-  /**
-   *
-   */
   public function get_name() {
     return @$this->name;
   }
 
-  /**
-   *
-   */
   public function set_name($name) {
     return $this->name = $name;
   }
 
-  /**
-   *
-   */
   public function set_location($location) {
     $this->location = $location;
   }
 
-  /**
-   *
-   */
   public function get_location() {
     return @$this->location;
   }
 
-  /**
-   *
-   */
   public function get_display_location() {
     return $this->get_location();
   }
 
-  /**
-   *
-   */
   public function settings($key = NULL) {
     $out = $this->settings;
     if ($key) {
@@ -423,9 +399,9 @@ class backup_migrate_location extends backup_migrate_item {
    */
   public function set_url($url) {
     $parts          = (array) parse_url($url);
-    $parts['user']  = urldecode(@$parts['user']);
-    $parts['pass']  = urldecode(@$parts['pass']);
-    $parts['path']  = urldecode(@$parts['path']);
+    $parts['user'] = urldecode(@$parts['user']);
+    $parts['pass'] = urldecode(@$parts['pass']);
+    $parts['path'] = urldecode(@$parts['path']);
     $parts['path']  = ltrim(@$parts['path'], "/");
     $this->dest_url = $parts;
   }
@@ -443,7 +419,6 @@ class backup_migrate_location extends backup_migrate_item {
  * A base class for creating locations.
  */
 class backup_migrate_location_remote extends backup_migrate_location {
-
   /**
    * The location is a URI so parse it and store the parts.
    */

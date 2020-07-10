@@ -15,9 +15,7 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
   public $db_target = 'default';
   public $connection = NULL;
 
-  /**
-   *
-   */
+
   public function type_name() {
     return t("Database");
   }
@@ -26,7 +24,7 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
    * Save the info by importing it into the database.
    */
   public function save_file($file, $settings) {
-    require_once dirname(__FILE__) . '/files.inc';
+    backup_migrate_include('files');
 
     // Set the source_id to the destination_id in the settings since for a restore, the source_id is the
     // database that gets restored to.
@@ -44,7 +42,7 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
   public function edit_form() {
     $form = parent::edit_form();
     $form['scheme']['#title'] = t('Database type');
-    // $form['scheme']['#options'] = array($GLOBALS['db_type'] => $GLOBALS['db_type']);
+    //    $form['scheme']['#options'] = array($GLOBALS['db_type'] => $GLOBALS['db_type']);
     $form['scheme']['#description'] = t('The type of the database. Drupal only supports one database type at a time, so this must be the same as the current database type.');
     $form['path']['#title'] = t('Database name');
     $form['path']['#description'] = t('The name of the database. The database must exist, it will not be created for you.');
@@ -120,7 +118,7 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
    * Get the form for the backup settings for this destination.
    */
   public function backup_settings_form($settings) {
-    $objects = $this->get_object_names();
+    $objects  = $this->get_object_names();
     $form['#description'] = t("You may omit specific tables, or specific table data from the backup file. Only omit data that you know you will not need such as cache data, or tables from other applications. Excluding tables can break your Drupal install, so <strong>do not change these settings unless you know what you're doing</strong>.");
     $form['exclude_tables'] = array(
       "#type" => "select",
@@ -130,7 +128,7 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
       "#default_value" => $settings['exclude_tables'],
       "#description" => t("The selected tables will not be added to the backup file."),
     );
-    $tables = $this->get_table_names();
+    $tables  = $this->get_table_names();
     $form['nodata_tables'] = array(
       "#type" => "select",
       "#multiple" => TRUE,
@@ -203,7 +201,7 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
       else {
         // If the url is specified build it into a connection info array.
         if (!empty($this->dest_url)) {
-          $info   = array(
+          $info = array(
             'driver'    => empty($this->dest_url['scheme']) ? NULL : $this->dest_url['scheme'],
             'host'      => empty($this->dest_url['host']) ? NULL : $this->dest_url['host'],
             'port'      => empty($this->dest_url['port']) ? NULL : $this->dest_url['port'],

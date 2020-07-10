@@ -73,6 +73,7 @@ class backup_migrate_filter_encryption extends backup_migrate_filter {
         ),
       );
 
+
     }
 
     return $form;
@@ -153,7 +154,7 @@ class backup_migrate_filter_encryption extends backup_migrate_filter {
   /**
    * Encrypts a file with the Encrypt module.
    */
-  public function encrypt($source, $dest, $settings) {
+  function encrypt($source, $dest, $settings) {
     $success = FALSE;
     if (function_exists('encrypt')) {
       if (!empty($settings->filters['encrypt_config'])) {
@@ -178,7 +179,7 @@ class backup_migrate_filter_encryption extends backup_migrate_filter {
   /**
    * Decrypts a file with the Encrypt module.
    */
-  public function decrypt($source, $dest) {
+  function decrypt($source, $dest) {
     $success = FALSE;
     if (function_exists('decrypt')) {
       if ($data = $source->get_contents()) {
@@ -208,7 +209,6 @@ class backup_migrate_filter_encryption extends backup_migrate_filter {
             $file = NULL;
           }
           break;
-
         case "encrypt":
           $from = $file->push_type('encrypt');
           $from = new backup_file(array('filepath' => $from));
@@ -237,12 +237,10 @@ class backup_migrate_filter_encryption extends backup_migrate_filter {
           $from = $file->pop_type();
           $success = $this->aes_decrypt($from, $file);
           break;
-
         case "encrypt":
           $from = $file->pop_type();
           $success = $this->decrypt($from, $file);
           break;
-
         default:
           return $file;
       }

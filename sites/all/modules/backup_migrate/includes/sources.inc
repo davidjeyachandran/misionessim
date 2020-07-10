@@ -5,9 +5,7 @@
  * All of the source handling code needed for Backup and Migrate.
  */
 
-require_once dirname(__FILE__) . '/crud.inc';
-require_once dirname(__FILE__) . '/destinations.inc';
-require_once dirname(__FILE__) . '/locations.inc';
+backup_migrate_include('crud', 'locations', 'destinations');
 
 /**
  * Get all the available backup sources.
@@ -86,10 +84,11 @@ function backup_migrate_backup_migrate_source_subtypes() {
  * Get the built in backup sources and those in the db.
  */
 function backup_migrate_backup_migrate_sources() {
-  require_once dirname(__FILE__) . '/filters.inc';
+  $out = array();
 
   // Expose the configured databases as sources.
-  $out = backup_migrate_filters_invoke_all('sources');
+  backup_migrate_include('filters');
+  $out += backup_migrate_filters_invoke_all('sources');
 
   return $out;
 }
@@ -98,7 +97,7 @@ function backup_migrate_backup_migrate_sources() {
  * Get the source options as a form element.
  */
 function _backup_migrate_get_source_form($source_id = 'db') {
-  require_once dirname(__FILE__) . '/destinations.inc';
+  backup_migrate_include('destinations');
 
   $form = array();
   $sources = _backup_migrate_get_source_pulldown($source_id);

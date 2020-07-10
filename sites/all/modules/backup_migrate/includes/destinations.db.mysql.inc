@@ -4,7 +4,7 @@
  * @file
  */
 
-require_once dirname(__FILE__) . '/destinations.db.inc';
+backup_migrate_include('destinations.db');
 
 /**
  * @file
@@ -39,9 +39,6 @@ class backup_migrate_destination_db_mysql extends backup_migrate_destination_db 
    */
   protected static $viewNames = array();
 
-  /**
-   *
-   */
   public function type_name() {
     return t("MySQL Database");
   }
@@ -553,7 +550,7 @@ class backup_migrate_destination_db_mysql extends backup_migrate_destination_db 
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE=NO_AUTO_VALUE_ON_ZERO */;
 
-SET NAMES utf8mb4;
+SET NAMES utf8;
 
 ";
   }

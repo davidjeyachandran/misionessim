@@ -84,7 +84,6 @@ function _backup_migrate_destination_email_mail_backup($attachment, $to) {
   $mail->add_attachment($attach, $attachment->filename, "application/octet-stream");
   $mail->send();
 }
-
 /**
  *
  */
@@ -96,9 +95,6 @@ class mime_mail {
   public $subject;
   public $body;
 
-  /**
-   *
-   */
   public function __construct() {
     $this->parts   = array();
     $this->to      = "";
@@ -108,9 +104,6 @@ class mime_mail {
     $this->body    = "";
   }
 
-  /**
-   *
-   */
   public function add_attachment($message, $name, $ctype) {
     $this->parts[] = array(
       "message" => $message,
@@ -119,13 +112,9 @@ class mime_mail {
     );
   }
 
-  /**
-   *
-   */
   public function build_message($part) {
     $crlf = "\r\n";
-    // See RFC 2184.
-    $continuation = $crlf . '  ';
+    $continuation = $crlf . '  '; // See RFC 2184.
     $name = $part['name'];
     $len = strlen($name);
 
@@ -137,26 +126,20 @@ class mime_mail {
       $tail = substr($name, ($len - 32));
       $name = $head . '___' . $tail;
     }
-    $message = chunk_split(base64_encode($part["message"]), 70, $crlf);
+    $message  = chunk_split(base64_encode($part["message"]), 70, $crlf);
     $disposition = $name ? "Content-Disposition: attachment; {$continuation}filename=\"$name\"$crlf" : "";
-    return "Content-Type: " . $part["ctype"] . ($name ? ";{$continuation}name=\"$name\"" : "") .
-    "{$crlf}Content-Transfer-Encoding: base64$crlf$disposition$crlf$message";
+  return "Content-Type: " . $part["ctype"] . ($name ? ";{$continuation}name=\"$name\"" : "") .
+  "{$crlf}Content-Transfer-Encoding: base64$crlf$disposition$crlf$message";
   }
 
-  /**
-   *
-   */
   public function build_multipart($boundary) {
     $multipart = "This is a MIME encoded message.\r\n\r\n--$boundary";
-    for ($i = count($this->parts) - 1; $i >= 0; $i--) {
+    for ($i = sizeof($this->parts) - 1; $i >= 0; $i--) {
       $multipart .= "\r\n" . $this->build_message($this->parts[$i]) . "--$boundary";
     }
     return $multipart . "--\r\n";
   }
 
-  /**
-   *
-   */
   public function send() {
     $headers = array();
     if (!empty($this->body)) {
@@ -164,7 +147,7 @@ class mime_mail {
     }
     $headers['MIME-Version'] = "1.0";
     $boundary = "b" . md5(uniqid(time()));
-    $headers['Content-Type'] = "multipart/mixed; boundary=\"$boundary\"";
+    $headers['Content-Type'] =  "multipart/mixed; boundary=\"$boundary\"";
     $message = $this->build_multipart($boundary);
     $params = array();
     $params['body'] = $message;
@@ -173,5 +156,4 @@ class mime_mail {
 
     drupal_mail('backup_migrate', 'destination_mail', trim($this->to), '', $params, $this->from);
   }
-
 }

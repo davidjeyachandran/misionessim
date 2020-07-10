@@ -32,8 +32,7 @@ class backup_migrate_destination_s3 extends backup_migrate_destination_remote {
    * Load from the s3 destination.
    */
   public function load_file($file_id) {
-    require_once dirname(__FILE__) . '/files.inc';
-
+    backup_migrate_include('files');
     $file = new backup_file(array('filename' => $file_id));
     if ($s3 = $this->s3_object()) {
       $data = $s3->getObject($this->get_bucket(), $this->remote_path($file_id), $file->filepath());
@@ -41,7 +40,6 @@ class backup_migrate_destination_s3 extends backup_migrate_destination_remote {
         return $file;
       }
     }
-
     return NULL;
   }
 
@@ -58,8 +56,7 @@ class backup_migrate_destination_s3 extends backup_migrate_destination_remote {
    * List all files from the s3 destination.
    */
   public function _list_files() {
-    require_once dirname(__FILE__) . '/files.inc';
-
+    backup_migrate_include('files');
     $files = array();
     if ($s3 = $this->s3_object()) {
       $s3_files = $s3->getBucket($this->get_bucket(), $this->get_subdir());
@@ -72,7 +69,6 @@ class backup_migrate_destination_s3 extends backup_migrate_destination_remote {
         $files[$info['filename']] = new backup_file($info);
       }
     }
-
     return $files;
   }
 
@@ -158,9 +154,6 @@ class backup_migrate_destination_s3 extends backup_migrate_destination_remote {
     return implode('/', array_filter($parts));
   }
 
-  /**
-   *
-   */
   public function s3_object() {
     // Try to use libraries module if available to find the path.
     if (function_exists('libraries_get_path')) {
