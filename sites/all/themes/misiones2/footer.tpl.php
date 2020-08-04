@@ -58,7 +58,7 @@
 window.addEventListener('load', function () {
   const websiteConfig = {
     "urlInclude": [],
-    "urlExclude" : ["*logout*","/admin_menu*", "/contact", "/la-revista/*", "*admin/*", "*.txt", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx", "*.mp3", "*.mp4", "*.avi", "*.jpg", "*.jpeg", "*.zip"],
+    "urlExclude" : ["*logout*","/admin_menu*", "/contact", "/la-revista/*", "/faq","*admin/*", "*.txt", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx", "*.mp3", "*.mp4", "*.avi", "*.jpg", "*.jpeg", "*.zip"],
     "doNotFetch" : ["*logout*"],
     "elementSelector": null,
     "url": {
