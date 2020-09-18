@@ -709,3 +709,11 @@ Blog View
 .item-list .pager li {
   padding: 0em;
 }
+
+/* Style search form that appears on the Revista Vamos page */
+#search-block-form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}

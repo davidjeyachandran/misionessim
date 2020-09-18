@@ -22,13 +22,14 @@
  * - $pager: The pager next/prev links to display, if any
  * - $exposed: Exposed widget form/info to display
  * - $feed_icon: Feed icon to display, if any
- * - $more: A link to view more, if any
+ * - $more: A link to view more, if any.
  *
  * @ingroup views_templates
  * 
- * DJ - We print the VAMOS view at the bottom of this standard template.
- * 
+ * DJ - Added the search form block to appear after title
  */
+
+$block = module_invoke('search', 'block_view');
 ?>
 
 <div class="<?php print $classes; ?>">
@@ -40,6 +41,10 @@
   <?php if ($header): ?>
     <div class="view-header">
       <?php print $header; ?>
+      <?php if ($block): ?>
+        <div class="search">
+        <?php print render($block['content']); ?>
+      <?php endif; ?>
     </div>
   <?php endif; ?>
 
@@ -92,6 +97,3 @@
   <?php endif; ?>
 
 </div><?php /* class view */ ?>
-
-
-<?php print views_embed_view('vamos'); ?>
