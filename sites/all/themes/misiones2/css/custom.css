@@ -963,3 +963,37 @@ img {
 img[data-src] {
   opacity: 0;
 }
+
+/* Map and Regions Content type */
+
+.field-name-field-map {
+  cursor: pointer;
+}
+
+.region .field-label {
+  margin: 20px 0 5px 0;
+}
+
+.field-name-field-map {
+  margin-bottom: 40px;
+}
+
+.field-name-field-paises {
+  margin-bottom: 20px;
+}
+
+.button {
+  background: #BD2A26;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.button:hover{
+background: #ffffff;
+color: #000000;
+border: 1px solid #BD2A26 !important;
+}
