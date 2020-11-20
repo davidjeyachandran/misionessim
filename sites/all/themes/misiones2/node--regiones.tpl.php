@@ -83,7 +83,7 @@ hide($content['field_mainimage']);
 
 ?>
 <div class="d-flex justify-content-center">
-  <div class="col-md-8">
+  <div class="col-md-6">
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
     <a href="/mapa" style="padding-top: 30px; font-weight: bold; color: #bd2a26">< Regresa al Mapa</a>
