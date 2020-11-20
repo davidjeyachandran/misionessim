@@ -63,30 +63,23 @@ window.addEventListener('load', function () {
     "elementSelector": null,
     "url": {
       "/": {
-        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista"],
         "pageFunction": function(urlTarget, jQuery, ga){
           homeSlider(jQuery);
           lazyLoad();
+          setupMapHoverClick(jQuery);
         }
       },
-      "/quienessomos": {
-        "prefetch" : ["/", "/recursos-movilicemos"],
-        "pageFunction": function(){}
+      "/demo": {
+        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista"],
+        "pageFunction": function(urlTarget, jQuery, ga){
+        }
       },
-      "/recursos-movilicemos": {
-        "prefetch" : ["/", "/quienessomos", "/la-revista"],
-        "pageFunction": function(){}
-      },
-      "/la-revista": {
-        "prefetch" : ["/", "/cursovamos"],
-        "pageFunction": function(){}
-      },
-      "/cursovamos": {
-        "prefetch" : ["/", "/recursos-movilicemos"],
-        "pageFunction": function(urlTarget){console.log('urlTarget: ' + urlTarget)}
+      "/mapa": {
+        "pageFunction": function(urlTarget, jQuery, ga){
+          setupMapHoverClick(jQuery);
+        }
       },
       "all": {
-        "prefetch" : ["/"],
         "pageFunction": function(urlTarget, jQuery, ga){
           ga('set', 'dimension1','faster');
           ga('send', 'pageview', urlTarget, {location: window.location.href});
