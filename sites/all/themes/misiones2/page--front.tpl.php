@@ -186,6 +186,21 @@
 <div class="featured">
   <div class="row">
     <div class="container">
+      <div class="col-md-6">
+      <?php
+        $blockObject = block_load('block', '3');
+        $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
+        $output = drupal_render($block);
+        print $output;
+      ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="featured" style="background-color: white">
+  <div class="row">
+    <div class="container">
       <div class="col-md-6 col-md-offset-3">
         <h2>Qué es SIM?</h2>
         <div class="videoWrapper">
@@ -194,7 +209,7 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
 </div>
 
 <?php include 'footer.tpl.php'; ?>

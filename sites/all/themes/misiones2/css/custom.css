@@ -966,6 +966,96 @@ img[data-src] {
 
 /* Map and Regions Content type */
 
+/* HeroImage styles */
+.hero-post {
+  position: relative;
+  text-align: center;
+  background: black;
+  overflow: hidden;
+}
+
+.hero-post img {
+  display: block;
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  position: relative;
+  opacity: 0.8;
+}
+
+.hero-post-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.hero-post-text h1 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+
 .field-name-field-map {
   cursor: pointer;
 }
@@ -996,4 +1086,12 @@ img[data-src] {
 background: #ffffff;
 color: #000000;
 border: 1px solid #BD2A26 !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
 }

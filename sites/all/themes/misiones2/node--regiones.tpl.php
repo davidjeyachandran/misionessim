@@ -79,32 +79,31 @@
  *
  * @ingroup themeable
  */
+hide($content['field_mainimage']);
+
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div class="d-flex justify-content-center">
+  <div class="col-md-8">
+  <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
+    <a href="/mapa" style="padding-top: 30px; font-weight: bold; color: #bd2a26">< Regresa al Mapa</a>
+    <br><br>
+    <?php print render($title_suffix); ?>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <a href="/misionessim/mapa" style="font-weight: bold; color: #bd2a26">< Regresa al Mapa</a>
-<br><br>
-  <?php print render($title_suffix); ?>
+    <div class="content"<?php print $content_attributes; ?>>
+      <?php
+        hide($content['links']);
+        print render($content);
+      ?>
+    </div>
 
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      hide($content['links']);
-      print render($content);
-    ?>
+    <?php print render($content['links']); ?>
+
   </div>
-
-  <?php print render($content['links']); ?>
-
+  </div>
 </div>
 <script>
   jQuery('.field-name-field-map').click(function(event){
-    console.log('click: ' + 'https://' + document.location.hostname + '/mapa')
     window.location.href = '/mapa';
   })
 </script>
