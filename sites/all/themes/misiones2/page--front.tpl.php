@@ -185,8 +185,8 @@
 
 <div class="featured">
   <div class="row">
-    <div class="container">
-      <div class="col-md-6">
+    <div class="container d-flex justify-content-center">
+      <div class="col-md-8">
       <?php
         $blockObject = block_load('block', '3');
         $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
