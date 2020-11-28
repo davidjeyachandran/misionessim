@@ -183,10 +183,18 @@
   </div>
 </div>
 
+<style>
+.stats {
+  color: #bd2919;
+  flex-direction: column;
+  justify-content: center;
+}
+</style>
+
 <div class="featured">
-  <div class="row">
-    <div class="container d-flex justify-content-center">
-      <div class="col-md-8">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-xs-12 col-md-9">
       <?php
         $blockObject = block_load('block', '3');
         $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
@@ -194,6 +202,25 @@
         print $output;
       ?>
       </div>
+      
+        <div class="stats d-flex flex-column col-md-3 hidden-xs">
+          <div class="row">
+              <div class="col-md-6 text-center">    
+                  <h2>70+</h2>
+                  <h4>Paises</h4>
+              </div>
+              <div class="col-md-6 text-center"> 
+                  <h2>60+</h2>
+                  <h4>Nacionalidades</h4>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 text-center"> 
+                  <h2>4000+</h2>
+                  <h4>Obreros</h4>
+              </div>
+          </div>
+        </div>
     </div>
   </div>
 </div>
