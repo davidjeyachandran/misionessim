@@ -79,7 +79,11 @@
  *
  * @ingroup themeable
  */
+
+ $uri = $node->field_map[LANGUAGE_NONE][0]['uri'];
+ $map_path= file_create_url($uri);
 hide($content['field_mainimage']);
+hide($content['field_map']);
 
 ?>
 <div class="d-flex justify-content-center">
@@ -88,8 +92,12 @@ hide($content['field_mainimage']);
 
     <a href="/mapa" style="padding-top: 30px; font-weight: bold; color: #bd2a26">< Regresa al Mapa</a>
     <br><br>
-    <?php print render($title_suffix); ?>
+    <a href="/mapa" style="padding: 30px 0;">
+      <img src="<? print $map_path ?>" alt="map" />
+    </a>
 
+    <?php print render($title_suffix); ?>
+    <br><br>
     <div class="content"<?php print $content_attributes; ?>>
       <?php
         hide($content['links']);
@@ -102,8 +110,3 @@ hide($content['field_mainimage']);
   </div>
   </div>
 </div>
-<script>
-  jQuery('.field-name-field-map').click(function(event){
-    window.location.href = '/mapa';
-  })
-</script>
