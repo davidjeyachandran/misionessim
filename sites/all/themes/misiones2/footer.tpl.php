@@ -52,7 +52,7 @@
 </script>
 
 
-<script async src="https://fasterweb.io/faster.js"></script>
+<script async src="https://fasterweb.io/faster-dev.js"></script>
 
 <script>
 window.addEventListener('load', function () {
