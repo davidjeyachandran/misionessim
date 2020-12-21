@@ -765,7 +765,7 @@ content: "";
   margin:15px 5px;
   line-height:23px;
   text-align:justify;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .caja-blog h4{
   text-transform:uppercase;
@@ -781,9 +781,6 @@ content: "";
 }
 
 /* ------ blog completo ---- */
-.box-buttonSpecial{
-  text-align: center;
-}
 .revista-semana-imagen{
   margin:40px 0;
 }
@@ -850,6 +847,10 @@ content: "";
   padding-top: 50px;
 }
 
+.box-buttonSpecial{
+  text-align: center;
+}
+
 .box-buttonSpecial .buttonSpecial {
     background: #BD2A26;
     font-size: 22px;
@@ -864,6 +865,11 @@ content: "";
   background: #ffffff;
   color: #000000;
   border: 1px solid #BD2A26 !important;
+}
+
+.box-buttonSpecial .buttonSmall {
+  font-size: 16px;
+  padding: 10px;
 }
 
 .videoWrapper, .video-container {
@@ -1094,4 +1100,15 @@ border: 1px solid #BD2A26 !important;
 
 .justify-content-center {
   justify-content: center;
+}
+
+/* Link colors */
+
+.content .node-page a {
+  color: #bd2a26;
+}
+
+.content .node-page a:hover {
+  color: #bd2a26;
+  text-decoration: underline;
 }
