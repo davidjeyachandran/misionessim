@@ -851,7 +851,8 @@ content: "";
   text-align: center;
 }
 
-.box-buttonSpecial .buttonSpecial {
+.page-la-revista .box-buttonSpecial .buttonSpecial,
+.page-node .box-buttonSpecial .buttonSpecial {
     background: #BD2A26;
     font-size: 22px;
     color: #ffffff;
@@ -861,13 +862,15 @@ content: "";
     transition: all 0.3s ease;
 }
 
-.box-buttonSpecial .buttonSpecial:hover{
+.page-la-revista .box-buttonSpecial .buttonSpecial:hover,
+.page-node .box-buttonSpecial .buttonSpecial:hover{
   background: #ffffff;
   color: #000000;
   border: 1px solid #BD2A26 !important;
+  text-decoration: none;
 }
 
-.box-buttonSpecial .buttonSmall {
+.page-node .box-buttonSpecial .buttonSmall {
   font-size: 16px;
   padding: 10px;
 }
