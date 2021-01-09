@@ -51,47 +51,4 @@
   ga('send', 'pageview');
 </script>
 
-
-<script async src="https://fasterweb.io/faster.js"></script>
-
-<script>
-window.addEventListener('load', function () {
-  const websiteConfig = {
-    "urlInclude": [],
-    "urlExclude" : ["*logout*","/admin_menu*", "/contact", "/la-revista/*", "/faq","*admin/*", "*.txt", "*.doc", "*.docx", "*.pdf", "*.ppt", "*.pptx", "*.mp3", "*.mp4", "*.avi", "*.jpg", "*.jpeg", "*.zip"],
-    "doNotFetch" : ["*logout*"],
-    "elementSelector": null,
-    "url": {
-      "/": {
-        "pageFunction": function(urlTarget, jQuery, ga){
-          homeSlider(jQuery);
-          lazyLoad();
-          setupMapHoverClick(jQuery);
-        }
-      },
-      "/demo": {
-        "prefetch" : ["/quienessomos","/recursos-movilicemos", "/la-revista"],
-        "pageFunction": function(urlTarget, jQuery, ga){
-        }
-      },
-      "/mapa": {
-        "pageFunction": function(urlTarget, jQuery, ga){
-          setupMapHoverClick(jQuery);
-        }
-      },
-      "all": {
-        "pageFunction": function(urlTarget, jQuery, ga){
-          ga('set', 'dimension1','faster');
-          ga('send', 'pageview', urlTarget, {location: window.location.href});
-          console.log('All url callback: ' + window.location.pathname);
-        }
-      }
-    }
-  }
-
-  window.faster(websiteConfig, jQuery, ga);
-
-});
-</script>
-
 <?php endif; ?>
