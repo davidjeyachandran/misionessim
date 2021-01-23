@@ -9,6 +9,7 @@
   });
 
   var websiteConfig = {
+    debug: true,
     urlInclude: [],
     urlExclude: [
       "*logout*",
