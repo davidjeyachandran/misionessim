@@ -231,7 +231,7 @@
       <div class="col-md-6 col-md-offset-3">
         <h2>Qué es SIM?</h2>
         <div class="videoWrapper">
-          <iframe width="560" height="315"
+          <iframe class="b-lazy" width="560" height="315"
             data-src="https://www.youtube.com/embed/YIIw-r8ZYAY" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
