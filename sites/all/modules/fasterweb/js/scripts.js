@@ -26,7 +26,6 @@
       "/": {
         pageFunction: function (urlTarget, externalScriptObject) {
           homeSlider(externalScriptObject.jQuery);
-          lazyLoad();
           setupMapHoverClick(externalScriptObject.jQuery);
         },
       },

@@ -110,7 +110,7 @@
 
               <li class="homeslider-container">	
                 <a href="#">	
-                  <img data-src="<?php print $path ?>/images/slider2.jpg"/></a>	
+                  <img class="b-lazy" data-src="<?php print $path ?>/images/slider2.jpg"/></a>	
                 <div class="homeslider-description hidden">	
                   <div class="container">	
                     <div>	
@@ -123,7 +123,7 @@
 
               <li class="homeslider-container">	
                 <a href="#">	
-                  <img data-src="<?php print $path ?>/images/slider3.jpg"/></a>	
+                  <img class="b-lazy" data-src="<?php print $path ?>/images/slider3.jpg"/></a>	
                 <div class="homeslider-description hidden">	
                   <div class="container">	
                     <div>	
@@ -137,7 +137,7 @@
 
               <li class="homeslider-container">	
                 <a href="la-revista">	
-                  <img data-src="<?php print $path ?>/images/slider4.jpg"/></a>	
+                  <img class="b-lazy" data-src="<?php print $path ?>/images/slider4.jpg"/></a>	
                 <div class="homeslider-description hidden">	
                   <div class="container">	
                     <div>	
@@ -165,19 +165,19 @@
     <div class="col col-md-4">
       <h3 class="title_block"><a href="sirve-con-nosotros" hreflang="en">Sirve Con Nosotros</a></h3>
       <div class="center">
-        <a href="sirve-con-nosotros"><img data-src="<?php print $path ?>/images/comeserve.jpg" width="370" height="267" alt="serve" typeof="foaf:Image" /></a>
+        <a href="sirve-con-nosotros"><img class="b-lazy" data-src="<?php print $path ?>/images/comeserve.jpg" width="370" height="267" alt="serve" typeof="foaf:Image" /></a>
       </div>
     </div>
     <div class="col col-md-4">
       <h3 class="title_block"><a href="ora-con-nosotros" hreflang="en">Ora con nosotros</a></h3>
       <div class="center">
-        <a href="ora-con-nosotros"><img data-src="<?php print $path ?>/images/pray.jpg" width="370" height="267" alt="pray" typeof="foaf:Image" /></a>
+        <a href="ora-con-nosotros"><img class="b-lazy" data-src="<?php print $path ?>/images/pray.jpg" width="370" height="267" alt="pray" typeof="foaf:Image" /></a>
       </div>
     </div>
     <div class="col col-md-4">
       <h3 class="title_block"><a href="da-la-obra" hreflang="en">Da a la obra</a></h3>
       <div class="center">
-        <a href="da-la-obra"><img data-src="<?php print $path ?>/images/dar.jpg" width="370" height="267" alt="dar" typeof="foaf:Image" /></a>
+        <a href="da-la-obra"><img class="b-lazy" data-src="<?php print $path ?>/images/dar.jpg" width="370" height="267" alt="dar" typeof="foaf:Image" /></a>
       </div>
     </div>
   </div>
@@ -244,6 +244,5 @@
 window.addEventListener('load', function () {
   jQuery('.homeslider-description').removeClass('hidden')
   homeSlider(jQuery);
-  lazyLoad();
 })
 </script>
