@@ -87,6 +87,13 @@
 ?>
 <?php $path =  base_path() . path_to_theme();?>
 <?php include 'header.tpl.php'; ?>
+<style>
+  img.hero-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+  } 
+</style>
 
       <div class="row" id="slider_row">
         <div class="center_column col-xs-12" id="top_column">
@@ -95,8 +102,8 @@
               <div class="bx-viewport">
 
               <ul id="homeslider"><li class="homeslider-container">
-                <a href="#">	
-                  <img class="no-b-lazy" src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
+                <a href="#">
+                  <img width="1920px" height="839px" class="hero-image no-b-lazy" src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
                 </a>	
                 <div class="homeslider-description">	
                   <div class="container">	
