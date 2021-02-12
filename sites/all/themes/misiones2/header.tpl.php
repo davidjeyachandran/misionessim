@@ -4,7 +4,7 @@
   <div class="container">
           <div id="header_logo">
               <a class="logo navbar-btn" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                <img src="<?php print $path ?>/images/logo-reversed.png" alt="<?php print t('Home'); ?>" />
+                <img width="219px" height="47px" src="<?php print $path ?>/images/logo-reversed.png" alt="<?php print t('Home'); ?>" />
               </a>
           </div>
     <button class="navbar-toggle collapsed" aria-expanded="false" type="button" data-toggle="collapse" data-target="#main-navbar">
