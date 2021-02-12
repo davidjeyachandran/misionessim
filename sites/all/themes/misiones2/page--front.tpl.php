@@ -96,7 +96,7 @@
 
               <ul id="homeslider"><li class="homeslider-container">
                 <a href="#">	
-                  <img src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
+                  <img class="no-b-lazy" src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
                 </a>	
                 <div class="homeslider-description">	
                   <div class="container">	
