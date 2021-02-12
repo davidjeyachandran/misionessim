@@ -32,18 +32,6 @@ function setupMapHoverClick($) {
   );
 }
 
-function lazyLoad() {
-  function replaceSrc(img) {
-    img.setAttribute("src", img.getAttribute("data-src"));
-    img.onload = function () {
-      img.removeAttribute("data-src");
-    };
-  }
-
-  [].forEach.call(document.querySelectorAll("img[data-src]"), replaceSrc);
-  [].forEach.call(document.querySelectorAll("iframe[data-src]"), replaceSrc);
-}
-
 function homeSlider(jQuery) {
   if (typeof homeslider_speed == "undefined") homeslider_speed = 500;
   if (typeof homeslider_pause == "undefined") homeslider_pause = 4000;
