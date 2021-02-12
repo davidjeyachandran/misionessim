@@ -103,7 +103,7 @@
 
               <ul id="homeslider"><li class="homeslider-container">
                 <a href="#">
-                  <img width="1920px" height="839px" class="hero-image no-b-lazy" src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
+                  <img width="1920px" height="839px" class="hero-image" src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
                 </a>	
                 <div class="homeslider-description">	
                   <div class="container">	
@@ -117,7 +117,7 @@
 
               <li class="homeslider-container">	
                 <a href="#">	
-                  <img class="b-lazy" data-src="<?php print $path ?>/images/slider2.jpg"/></a>	
+                  <img  width="1920px" height="839px" class="hero-image b-lazy" data-src="<?php print $path ?>/images/slider2.jpg"/></a>	
                 <div class="homeslider-description hidden">	
                   <div class="container">	
                     <div>	
@@ -130,7 +130,7 @@
 
               <li class="homeslider-container">	
                 <a href="#">	
-                  <img class="b-lazy" data-src="<?php print $path ?>/images/slider3.jpg"/></a>	
+                  <img  width="1920px" height="839px" class="hero-image b-lazy" data-src="<?php print $path ?>/images/slider3.jpg"/></a>	
                 <div class="homeslider-description hidden">	
                   <div class="container">	
                     <div>	
@@ -144,7 +144,7 @@
 
               <li class="homeslider-container">	
                 <a href="la-revista">	
-                  <img class="b-lazy" data-src="<?php print $path ?>/images/slider4.jpg"/></a>	
+                  <img  width="1920px" height="839px" class="hero-image b-lazy" data-src="<?php print $path ?>/images/slider4.jpg"/></a>	
                 <div class="homeslider-description hidden">	
                   <div class="container">	
                     <div>	
