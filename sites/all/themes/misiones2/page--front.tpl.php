@@ -103,7 +103,9 @@
 
               <ul id="homeslider"><li class="homeslider-container">
                 <a href="#">
-                  <img width="1920px" height="839px" class="hero-image" src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
+                  <img 
+                  alt="Nadie debe vivir y morir sin haber escuchado"
+                  width="1920px" height="839px" class="hero-image" src="<?php print $path ?>/images/slider1.jpg" alt="Nadie debe vivir y morir sin haber escuchado">	
                 </a>	
                 <div class="homeslider-description">	
                   <div class="container">	
@@ -117,7 +119,9 @@
 
               <li class="homeslider-container">	
                 <a href="#">	
-                  <img  width="1920px" height="839px" class="hero-image b-lazy" data-src="<?php print $path ?>/images/slider2.jpg"/></a>	
+                  <img
+                  alt="Facilitamos la participación en misiones" 
+                  width="1920px" height="839px" class="hero-image b-lazy" data-src="<?php print $path ?>/images/slider2.jpg"/></a>	
                 <div class="homeslider-description hidden">	
                   <div class="container">	
                     <div>	
@@ -130,7 +134,9 @@
 
               <li class="homeslider-container">	
                 <a href="#">	
-                  <img  width="1920px" height="839px" class="hero-image b-lazy" data-src="<?php print $path ?>/images/slider3.jpg"/></a>	
+                  <img
+                  alt="Hacemos discípulos que hacen discípulos"
+                  width="1920px" height="839px" class="hero-image b-lazy" data-src="<?php print $path ?>/images/slider3.jpg"/></a>	
                 <div class="homeslider-description hidden">	
                   <div class="container">	
                     <div>	
@@ -238,7 +244,7 @@
       <div class="col-md-6 col-md-offset-3">
         <h2>Qué es SIM?</h2>
         <div class="videoWrapper">
-          <iframe class="b-lazy" width="560" height="315"
+          <iframe title="¿Qué es SIM?" class="b-lazy" width="560" height="315"
             data-src="https://www.youtube.com/embed/YIIw-r8ZYAY" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
