@@ -3,3 +3,8 @@ description = Better Web Performance with Intelligent Prefetching - connects to 
 package = Performance and Scalability
 core = 7.x
 configure = admin/config/development/performance/fasterweb
+; Information added by Drupal.org packaging script on 2021-04-04
+version = "7.x-1.0"
+core = "7.x"
+project = "fasterweb"
+datestamp = "1617510929"
